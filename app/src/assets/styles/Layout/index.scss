@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  // aside
+  .aside {
+    height: 100vh;
+    width: 240px;
+    color: $color-white;
+    background-color: $color-blue;
+    h1 {
+      height: 50px;
+      line-height: 50px;
+      padding-left: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background-color: $color-red;
+    }
+  }
+  // container
+  .container {
+    flex: 1;
+    .header {
+      display: flex;
+      padding: 0 20px;
+      height: 50px;
+      line-height: 50px;
+      color: #fff;
+      background-color: $color-blue;
+    }
+    .content {
+      background-color: $color-white;
+    }
+  }
+}
