@@ -4,19 +4,19 @@
  * @Author: Lean
  * @Date: 2020-04-28 09:36:13
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-28 09:41:26
+ * @LastEditTime: 2020-04-29 16:10:45
  */
 const Menu = [
   {
     name: 'Home',
-    url: '/home',
+    path: '/Home',
     meta: {
       title: '首页'
     },
     children: [
       {
         name: 'HomeIndex',
-        url: '/home/index',
+        path: '/Home/Index',
         meta: {
           title: '首页'
         },
@@ -25,14 +25,14 @@ const Menu = [
   },
   {
     name: 'About',
-    url: '/about',
+    path: '/About',
     meta: {
       title: '关于我们'
     },
     children: [
       {
         name: 'AboutIndex',
-        url: '/about/index',
+        path: '/About/Index',
         meta: {
           title: '关于我们'
         },
@@ -40,5 +40,13 @@ const Menu = [
     ]
   }
 ]
+
+export const childrens = () => {
+  let result = []
+  Menu.forEach(item => {
+    result = [...result, ...item.children]
+  })
+  return result
+}
 
 export default Menu

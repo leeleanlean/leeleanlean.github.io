@@ -26,6 +26,22 @@
       line-height: 50px;
       color: #fff;
       background-color: $color-blue;
+      ul {
+        display: flex;
+        li {
+          a {
+            color: #fff;
+            padding: 0 19px;
+            font-weight: 500;
+            display: block;
+            cursor: pointer;
+            &.active {
+              color: #052a5f;
+              background-color: #fff;
+            }
+          }
+        }
+      }
     }
     .content {
       background-color: $color-white;

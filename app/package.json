@@ -53,7 +53,7 @@
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "resolve": "1.15.0",
+    "resolve": "^1.17.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
     "semver": "6.3.0",
@@ -88,6 +88,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.5",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2"
   },

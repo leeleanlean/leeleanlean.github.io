@@ -299,6 +299,7 @@ module.exports = function(webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         '@': path.resolve(__dirname, '../src'),
+        '@/views': path.resolve(__dirname, '../src/views'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
