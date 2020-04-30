@@ -4,7 +4,7 @@
  * @Author: Lean
  * @Date: 2020-04-28 09:36:13
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-29 16:10:45
+ * @LastEditTime: 2020-04-30 17:58:27
  */
 const Menu = [
   {
@@ -18,7 +18,14 @@ const Menu = [
         name: 'HomeIndex',
         path: '/Home/Index',
         meta: {
-          title: '首页'
+          title: '个人简历'
+        },
+      },
+      {
+        name: 'HomeDashboard',
+        path: '/Home/Dashboard',
+        meta: {
+          title: 'Dashboard'
         },
       }
     ]

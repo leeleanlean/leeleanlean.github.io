@@ -66,11 +66,12 @@ select:-webkit-autofill {
 // Correct block display not defined for main in IE 11.
 div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+  margin: 0;
 }
 
 // 1. Correct inline-block display not defined in IE 9-.
 audio, canvas, progress, video {
-display: inline-block; // 1
+  display: inline-block; // 1
 }
 
 // padding

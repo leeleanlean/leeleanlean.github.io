@@ -4,7 +4,7 @@
  * @Author: Lean
  * @Date: 2020-04-20 10:05:33
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-29 13:54:45
+ * @LastEditTime: 2020-04-30 17:07:37
  */
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -13,9 +13,7 @@ import App from './views/App'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 )
 

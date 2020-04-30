@@ -4,17 +4,15 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:17:04
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-30 13:39:28
+ * @LastEditTime: 2020-04-30 17:37:54
  */
-import React, {
-  useState
-} from 'react'
+import React, { useState } from 'react'
 import {
   HashRouter as Router,
   Link
 } from 'react-router-dom'
 
-import Menu from '@/router/router'
+import Menu from '../../../../router/router'
 
 const Header = () => {
   // 设置默认顶部菜单active

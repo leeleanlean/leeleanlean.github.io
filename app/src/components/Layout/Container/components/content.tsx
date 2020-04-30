@@ -4,10 +4,10 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:17:15
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-29 14:50:13
+ * @LastEditTime: 2020-04-30 17:37:37
  */
 import React from 'react'
-import Router from '@/router/index'
+import Router from '../../../../router'
 
 const Content = () => {
   return (

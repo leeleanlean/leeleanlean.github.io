@@ -47,7 +47,7 @@ const BasicExample = () => (
 
         {/* NotFound */}
         <Route component={
-          lazy(() => import('../views/NotFound'))
+          lazy(() => import('../components/NotFound'))
         } />
       </Switch>
     </Suspense>
