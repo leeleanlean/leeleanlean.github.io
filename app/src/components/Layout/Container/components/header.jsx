@@ -4,7 +4,7 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:17:04
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-29 15:39:31
+ * @LastEditTime: 2020-04-30 13:39:28
  */
 import React, {
   useState
@@ -17,7 +17,11 @@ import {
 import Menu from '@/router/router'
 
 const Header = () => {
-  const [active, setActive] = useState(0)
+  // 设置默认顶部菜单active
+  const [active, setActive] = useState(() => {
+    const hash = window.location.hash
+    return Menu.findIndex(item => hash.includes(item.path))
+  })
   return (
     <div className='header'>
       <Router>

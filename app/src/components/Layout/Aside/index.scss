@@ -1,0 +1,14 @@
+@import '@/assets/styles/Color';
+.aside {
+  position: relative;
+  .time {
+    position: absolute;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    background-color: $color-blue;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
