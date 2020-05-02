@@ -4,9 +4,9 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:17:04
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-30 17:37:54
+ * @LastEditTime: 2020-05-02 12:26:25
  */
-import React, { useState } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import {
   HashRouter as Router,
   Link
@@ -14,14 +14,51 @@ import {
 
 import Menu from '../../../../router/router'
 
-const Header = () => {
-  // 设置默认顶部菜单active
-  const [active, setActive] = useState(() => {
+import LayoutContext from '../../../../store/LayoutContext'
+
+const ContainerHeader = () => {
+  /**
+   * useContext
+   */
+  const context:any = useContext(LayoutContext)
+  
+  /**
+   * useState
+   */
+  // 激活状态
+  const [active, setActive] = useState(Number)
+
+  /**
+   * useEffect
+   */
+  useEffect(() => {
+    // 获取当前hash值
     const hash = window.location.hash
-    return Menu.findIndex(item => hash.includes(item.path))
-  })
+    // 默认顶部菜单active
+    setActive(() => {
+      return Menu.findIndex(item => hash.includes(item.path))
+    })
+
+    // 设置二级菜单
+    const c = Menu.filter(item => hash.includes(item.path))
+    c.length && context.setAsideMenu(c[0].children)
+  }, [context])
+
+  /**
+   * methods
+   */
+  // 切换一级栏目
+  const changeRouter = (index:number) => {
+    // 设置一级菜单激活
+    setActive(index)
+
+    // 设置二级菜单
+    const _child = Menu[index]['children']
+    _child.length && context.setAsideMenu(_child)
+
+  }
   return (
-    <div className='header'>
+    <div className='container-header'>
       <Router>
         <ul>
           {
@@ -30,7 +67,7 @@ const Header = () => {
                 <Link
                   to={item.path}
                   className={ active === index ? 'active' : '' }
-                  onClick={() => setActive(index)}>
+                  onClick={() => changeRouter(index)}>
                   {item.meta.title}
                 </Link>
               </li>
@@ -42,4 +79,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default ContainerHeader

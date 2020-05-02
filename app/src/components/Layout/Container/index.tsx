@@ -4,13 +4,14 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:09:57
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-29 14:26:18
+ * @LastEditTime: 2020-05-02 12:26:02
  */
 import React from 'react'
 import LayoutHeader from './components/header'
 import LayoutContent from './components/content'
 
-const Header = () => {
+const Container = () => {
+  console.log('Container')
   return(
     <div className="container">
       <LayoutHeader />
@@ -18,4 +19,4 @@ const Header = () => {
     </div>
   )
 }
-export default Header
+export default Container

@@ -4,17 +4,17 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:17:15
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-30 17:37:37
+ * @LastEditTime: 2020-05-02 12:26:42
  */
 import React from 'react'
 import Router from '../../../../router'
 
-const Content = () => {
+const ContainerContent = () => {
   return (
-    <div className="content m-20 p-20">
+    <div className="container-content m-20 p-20">
       <Router></Router>
     </div>
   )
 }
 
-export default Content
+export default ContainerContent

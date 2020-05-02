@@ -4,35 +4,42 @@
  * @Author: Lean
  * @Date: 2020-04-21 14:12:02
  * @LastEditors: Lean
- * @LastEditTime: 2020-04-30 17:54:18
+ * @LastEditTime: 2020-05-02 12:25:52
  */
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import {
   HashRouter as Router,
   Link
 } from 'react-router-dom'
-import router from '../../../../router/router'
 
-const Menu = () => {
-  console.log('Menu')
+import LayoutContext from '../../../../store/LayoutContext'
+
+const AsideMenu = () => {
+  /**
+   * useContext
+   */
+  const context:any = useContext(LayoutContext)
+  const childrens = context.asideMenu
+
+  /**
+   * useState
+   */
   const [active, setActive] = useState(0)
-  const [childs, setChilds] = useState(() => {
-    return router.filter(item => item.name === 'Home')[0].children
-  })
+
+  /**
+   * useEffect
+   */
   useEffect(() => {
-    window.addEventListener('hashchange', () => {
-      const hash = window.location.hash.split('#/')[1].split('/')[0]
-      setChilds(router.filter(item => item.name === hash)[0].children)
-    }, false)
-    return () => {
-      window.removeEventListener('hashchange', () => {})
-    }
-  }, [])
+    const path = window.location.hash.split('#')[1]
+    const index = childrens.findIndex((item: { path: string }) => item.path.includes(path))
+    setActive(index)
+  }, [childrens])
+
   return (
     <Router>
       <ul className="aside-menu">
         {
-          childs && childs.length && childs.map((item, index) => {
+          childrens && childrens.length && childrens.map((item:any, index:number) => {
             return <li key={index}>
               <Link
                 to={item.path}
@@ -48,4 +55,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default AsideMenu

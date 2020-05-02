@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const Timer = () => {
+const AsideTimer = () => {
   const [date, setDate] = useState(new Date().toLocaleDateString('en-GB'))
   const [time, setTime] = useState(new Date().toLocaleTimeString())
 
@@ -19,8 +19,8 @@ const Timer = () => {
   }, [])
 
   return (
-    <div className="time">Today: {date} {time}</div>
+    <div className="aside-time">Today: {date} {time}</div>
   )
 }
 
-export default Timer
+export default AsideTimer

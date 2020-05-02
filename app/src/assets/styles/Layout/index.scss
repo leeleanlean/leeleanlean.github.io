@@ -19,7 +19,7 @@
   // container
   .container {
     flex: 1;
-    .header {
+    .container-header {
       display: flex;
       padding: 0 20px;
       height: 50px;
@@ -43,7 +43,7 @@
         }
       }
     }
-    .content {
+    .container-content {
       background-color: $color-white;
     }
   }
