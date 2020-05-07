@@ -4,7 +4,7 @@
  * @Author: Lean
  * @Date: 2020-04-29 12:52:57
  * @LastEditors: Lean
- * @LastEditTime: 2020-05-01 16:19:04
+ * @LastEditTime: 2020-05-07 10:39:53
  */
 import React, { lazy, Suspense } from 'react'
 import {
@@ -17,7 +17,7 @@ import {
 import routes, { childrens } from './router'
 
 // Loading
-const Loading = <div>Loading...</div>
+const Loading = <div className="loading">Loading...</div>
 
 // 注册二级路由
 const childs = childrens()

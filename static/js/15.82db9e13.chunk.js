@@ -1,0 +1,2 @@
+(this.webpackJsonplean=this.webpackJsonplean||[]).push([[15],{44:function(a,e,n){"use strict";n.r(e);var s=n(0),c=n.n(s);e.default=function(){return c.a.createElement("div",{className:"case-official"},"CaseOfficial")}}}]);
+//# sourceMappingURL=15.82db9e13.chunk.js.map

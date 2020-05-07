@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Home = () => {
+import LayoutMain from '../../../components/LayoutMain'
+
+const HomeIndex = () => {
   return (
-    <div className="home">Home</div>
+    <LayoutMain title={'总体概览'}>
+      总体概览
+    </LayoutMain>
   )
 }
 
-export default Home
+export default HomeIndex

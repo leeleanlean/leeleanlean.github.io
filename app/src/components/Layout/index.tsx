@@ -4,20 +4,20 @@
  * @Author: Lean
  * @Date: 2020-04-21 13:46:34
  * @LastEditors: Lean
- * @LastEditTime: 2020-05-02 12:25:22
+ * @LastEditTime: 2020-05-07 09:39:10
  */
 import React from 'react'
-import Aside from './Aside/index'
-import Container from './Container/index'
+import Header from './Header/index'
+import Content from './Content/index'
 
 import { LayoutProvider } from '../../store/LayoutContext'
 
 function Layout() {
   return (
-    <div className="App">
+    <div className="layout">
       <LayoutProvider>
-        <Aside />
-        <Container />
+        <Header />
+        <Content />
       </LayoutProvider>
     </div>
   )

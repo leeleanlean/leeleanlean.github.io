@@ -1,0 +1,60 @@
+.case-miniprogram {
+  .ant-col {
+    .ant-card-body {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      .left {
+        width: 50%;
+        text-align: center;
+        dl {
+          margin-top: 30px;
+          dt {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            border-radius: 50%;
+            img {
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          dd {
+            margin-top: 10px;
+            font-weight: 500;
+          }
+        }
+        .desc {
+          margin-top: 50px;
+          .type {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+      .right {
+        // position: absolute;
+        width: 40%;
+        // top: -216px;
+        // right: 15px;
+        // bottom: 15px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // padding: 14px;
+        // background: url(../../../assets/images/Case/iphone.png) #fff;
+        // background-size: cover;
+        // &:hover {
+        //   cursor: pointer;
+        // }
+        // img {
+        //   border-radius: 22px;
+        //   &.ercode {
+        //     width: 65%;
+        //   }
+        // }
+      }
+    }
+  }
+}

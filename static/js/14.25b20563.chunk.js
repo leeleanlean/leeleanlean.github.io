@@ -1,0 +1,2 @@
+(this.webpackJsonplean=this.webpackJsonplean||[]).push([[14],{41:function(e,n,t){"use strict";t.r(n);var a=t(0),s=t.n(a);n.default=function(){return s.a.createElement("div",{className:"about-index"},"AboutIndex")}}}]);
+//# sourceMappingURL=14.25b20563.chunk.js.map

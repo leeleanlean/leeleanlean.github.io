@@ -1,0 +1,2 @@
+(this.webpackJsonplean=this.webpackJsonplean||[]).push([[19],{49:function(n,e,t){"use strict";t.r(e);var a=t(0),s=t.n(a);e.default=function(){return s.a.createElement("div",{className:"python-index"},"PythonIndex")}}}]);
+//# sourceMappingURL=19.d197b995.chunk.js.map
