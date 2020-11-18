@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: PingFangSC-Regular, -apple-system, Helvetica Neue, Roboto, Segoe UI, sans-serif;
+  font-size: 14px;
+  color: #f5f5f5;
+  background-color: #222;
+}
+ul li, li {
+  list-style: none;
+}
+img {
+  margin-bottom: -5px;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* title */
+h3.title {
+  display: inline-block;
+  position: relative;
+  font-size: 29px;
+  font-weight: 600;
+}
+h3.title span {
+  position: relative;
+  z-index: 9;
+}
+h3.title::after {
+  position: absolute;
+  opacity: 0.45;
+  bottom: -5px;
+  right: -25px;
+  content: "";
+  height: 30px;
+  width: 60px;
+  background-image: -webkit-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #04b4e0, #04b4e0 1px, transparent 0px, transparent 100%);
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+  z-index: 0;
+}
+
+/* slide-box */
+.slide-box {
+  display: -webkit-box;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 520px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -260px;
+}
+
+.slide-box::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.slide-box {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+/* slide-item */
+.slide-item {
+  height: 100%;
+  padding: 30px 0 30px 40px;
+  background-color: #333;
+}
+.slide-item .content {
+  margin-top: 30px;
+}
+.slide-item .content ul {
+  display: flex;
+}
+
+/* item1 */
+.item1 {
+  margin-left: 80px;
+  padding: 0 70px 0 70px;
+  background-color: #444;
+  text-align: center;
+}
+.item1 dl {
+  margin-top: 60px;
+}
+.item1 dl dt {
+  position: relative;
+  width: 135px;
+  margin: 0 auto;
+}
+.item1 dl dt img {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 9;
+}
+.item1 dl dt::after {
+  position: absolute;
+  opacity: 0.3;
+  top: 7%;
+  left: 7%;
+  border-radius: 300px;
+  content: "";
+  height: calc(100% + 0px);
+  width: calc(100% + 0px);
+  background-image: -webkit-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, #fff, #fff 1px, transparent 0px, transparent 100%);
+  -webkit-background-size: 6px 6px;
+  -moz-background-size: 6px 6px;
+  background-size: 6px 6px;
+}
+.item1 dl dd {
+  margin-top: 30px;
+}
+.item1 dl dd p.name {
+  font-size: 33px;
+  font-weight: 600;
+  margin: 5px 0 7px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.item1 dl dd p.title {
+  font-size: 14px;
+  font-weight: 300;
+  color: #bbb;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+.item1 dl dd p.link {
+  margin: 20px 0;
+}
+.item1 dl dd p.link img {
+  width: 45px;
+  cursor: pointer;
+  opacity: .3;
+}
+.item1 dl dd p.link img:hover {
+  opacity: .6;
+}
+.item1 .download {
+  display: inline-block;
+  position: relative;
+  margin-top: 25px;
+  padding: 9px 23px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1.5px solid #f5f5f5;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.item1 .download:hover {
+  text-decoration: underline;
+}
+.item1 .download.disabled {
+  font-weight: 500;
+  opacity: .6;
+}
+.item1 .download.disabled:hover {
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.item2 p {
+  line-height: 1.75;
+  margin-bottom: 16px;
+  color: #999;
+}
+.item2 p i {
+  display: inline-block;
+  margin-top: 14px;
+  margin-right: 2px;
+  padding: 2px 11px;
+  font-size: 13px;
+  font-style: normal;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+
+.item3 ul li {
+  width: 290px;
+  height: 91px;
+  padding-left: 35px;
+  background-color: #444;
+  transition: all .35s;
+  border: 1px solid #333;
+  color: #666;
+  font-weight: 600;
+}
+.item3 ul li a {
+  color: #666;
+}
+.item3 ul li p {
+  margin-top: 33px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item3 ul li span {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  display: none;
+}
+.item3 ul li:hover a {
+  cursor: pointer;
+  background-color: #222;
+  color: #aaa;
+}
+.item3 ul li:hover span {
+  display: block;
+}
+.item3 ul li:hover p {
+  margin-top: 23px;
+}
