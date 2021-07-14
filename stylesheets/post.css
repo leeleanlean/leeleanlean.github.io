@@ -186,7 +186,8 @@
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
-	min-width: 336px;
+	/* min-width: 336px; */
+	min-width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
 	-webkit-border-radius: .5em;
