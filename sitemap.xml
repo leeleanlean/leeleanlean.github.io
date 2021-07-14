@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leeleanlean.github.io/2021/07/04/CSS-%E9%80%89%E6%8B%A9%E5%99%A8%E4%BC%98%E5%85%88%E7%BA%A7/</loc>
+    
+    <lastmod>2021-07-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeleanlean.github.io/2021/07/04/CSS-Flex/</loc>
+    
+    <lastmod>2021-07-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeleanlean.github.io/2021/07/04/CSS-%E7%9B%92%E6%A8%A1%E5%9E%8B/</loc>
+    
+    <lastmod>2021-07-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leeleanlean.github.io/2021/07/04/hello-world/</loc>
     
     <lastmod>2021-07-14</lastmod>
@@ -31,7 +52,21 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://leeleanlean.github.io/tags/css/</loc>
+    <lastmod>2021-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://leeleanlean.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2021-07-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://leeleanlean.github.io/categories/others/</loc>
