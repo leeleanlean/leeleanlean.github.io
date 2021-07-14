@@ -1,5 +1,8 @@
 // 处理移动端响应
 @media screen and(max-width: 600px) {
+    body {
+        font-size: 30px;
+    }
     .header {
         .header-menu {
             display: none;
