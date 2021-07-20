@@ -61,6 +61,13 @@ img:not([src]):not([srcset]) {
     transform: scale(0.5);
 }
 
+/* Table */
+table {
+    td.gutter {
+        width: 60px;
+    }
+}
+
 /* Container */
 
 .container {

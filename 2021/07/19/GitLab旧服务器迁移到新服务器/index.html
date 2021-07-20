@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>JavaScript-数据类型 | Lean&#39;s blog</title>
+    <title>GitLab旧服务器迁移到新服务器 | Lean&#39;s blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
@@ -124,7 +124,7 @@
             <section class="inner">
                 <section class="inner-main">
                     <div class="post">
-    <article id="post-ckr3798ud000mx4tughp35cze" class="article article-type-post" itemscope
+    <article id="post-ckrbofvgn000094tua938e19e" class="article article-type-post" itemscope
     itemprop="blogPost">
 
     <div class="article-inner">
@@ -140,7 +140,7 @@
             
   
     <h1 class="article-title" itemprop="name">
-      JavaScript-数据类型
+      GitLab旧服务器迁移到新服务器
     </h1>
   
 
@@ -150,18 +150,18 @@
         <div class="article-more-info article-more-info-post hairline">
 
             <div class="article-date">
-  <time datetime="2021-07-04T07:51:00.000Z" itemprop="datePublished">2021-07-04</time>
+  <time datetime="2021-07-19T12:56:00.000Z" itemprop="datePublished">2021-07-19</time>
 </div>
 
             
             <div class="article-category">
-                <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
+                <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
             </div>
             
 
             
             <div class="article-tag">
-                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
+                <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitLab/" rel="tag">GitLab</a></li></ul>
             </div>
             
 
@@ -174,8 +174,22 @@
         </div>
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
-            <p>JavaScript 变量能够保存多种数据类型：数值、字符串值、数组、对象等等：</p>
-<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 分类 --&gt;</span><br><span class="line">基础类型 - Number String Boolean null undefined Symbol BigInt</span><br><span class="line">引用类型 - Object</span><br><span class="line"></span><br><span class="line">&lt;!-- 存储位置 --&gt;</span><br><span class="line">基础类型 - 存储在栈内存中</span><br><span class="line">引用类型 - 在栈内存中存储的为一串堆内存的地址</span><br><span class="line"></span><br><span class="line">&lt;!-- 区别 --&gt;</span><br><span class="line">数据结构堆比栈大，栈比堆快</span><br><span class="line">基础数据占用内存比较小，引用类型大小是动态的</span><br><span class="line"></span><br><span class="line">&lt;!-- 拷贝 --&gt;</span><br><span class="line">1. 浅拷贝-直接赋值</span><br><span class="line">o2 = o1</span><br><span class="line"></span><br><span class="line">2. 浅拷贝-JSON转换拷贝</span><br><span class="line">JSON.parse(JSON.stringify())</span><br><span class="line">undefined function symbol Date RegExp Error等特殊类型有问题</span><br><span class="line"></span><br><span class="line">3. 第一层深拷贝</span><br><span class="line">...</span><br><span class="line">Object.assign()</span><br><span class="line">Array.concat()</span><br><span class="line">Array.slice()</span><br><span class="line"></span><br><span class="line">4. 深拷贝</span><br><span class="line">const deepClone = (source) =&gt; &#123;</span><br><span class="line">  // 如果不是对象直接返回</span><br><span class="line">  if (typeof source !== &#x27;object&#x27;) return source</span><br><span class="line"></span><br><span class="line">  // 遍历拷贝</span><br><span class="line">  let target = Array.isArray(source) ? [] : &#123;&#125;</span><br><span class="line">  for (let key in source) &#123;</span><br><span class="line">    if (typeof source[key] === &#x27;object&#x27;) &#123;</span><br><span class="line">      target[key] = deepClone(source[key])</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      target[key] = source[key]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 返回深拷贝对象</span><br><span class="line">  return target</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id="gitlab-旧服务器迁移到新服务器"><a href="#gitlab-旧服务器迁移到新服务器" class="headerlink" title="gitlab 旧服务器迁移到新服务器"></a>gitlab 旧服务器迁移到新服务器</h1><h2 id="1-查看旧服务器gitlab版本"><a href="#1-查看旧服务器gitlab版本" class="headerlink" title="1. 查看旧服务器gitlab版本"></a>1. 查看旧服务器gitlab版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /opt/gitlab/embedded/service/gitlab-rails/VERSION</span><br><span class="line">// or</span><br><span class="line">gitlab-rake gitlab:env:info</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-新服务器安装对应版本的gitlab"><a href="#2-新服务器安装对应版本的gitlab" class="headerlink" title="2. 新服务器安装对应版本的gitlab"></a>2. 新服务器安装对应版本的gitlab</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">midkr gitlab</span><br><span class="line"></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm</span><br><span class="line">yum -y install gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-配置url和端口号"><a href="#2-2-配置url和端口号" class="headerlink" title="2.2 配置url和端口号"></a>2.2 配置url和端口号</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/gitlab/gitlab.rb</span><br><span class="line">external_url &#x27;http://xx.xx.xx.xx&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-重置并启动"><a href="#2-3-重置并启动" class="headerlink" title="2.3 重置并启动"></a>2.3 重置并启动</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br><span class="line">gitlab-ctl restart</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-旧服务器上备份gitlab数据"><a href="#3-旧服务器上备份gitlab数据" class="headerlink" title="3. 旧服务器上备份gitlab数据"></a>3. 旧服务器上备份gitlab数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /var/opt/gitlab/backups/</span><br><span class="line">gitlab-rake gitlab:backup:create</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-新服务器获取旧服务器备份的gitlab数据"><a href="#4-新服务器获取旧服务器备份的gitlab数据" class="headerlink" title="4. 新服务器获取旧服务器备份的gitlab数据"></a>4. 新服务器获取旧服务器备份的gitlab数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 在新服务器下面命令</span><br><span class="line">scp 旧服务器用户名@旧服务器IP:/var/opt/gitlab/backups/1626696893_2021_07_19_10.0.0_gitlab_backup.tar /var/opt/gitlab/backups</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-新服务器上恢复数据"><a href="#5-新服务器上恢复数据" class="headerlink" title="5. 新服务器上恢复数据"></a>5. 新服务器上恢复数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 停止数据连接服务</span><br><span class="line">gitlab-ctl stop unicorn</span><br><span class="line">gitlab-ctl stop sidekiq</span><br><span class="line"></span><br><span class="line">// 开始恢复</span><br><span class="line">chmod 777 xxx</span><br><span class="line">gitlab-rake gitlab:backup:restore BACKUP=xxx</span><br><span class="line"></span><br><span class="line">// 启动gitlab</span><br><span class="line">gitlab-ctl start</span><br></pre></td></tr></table></figure>
+
 
         </div>
 
@@ -194,19 +208,10 @@
     
 <nav class="article-nav">
   
-    <a href="/2021/07/04/CSS-%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" id="article-nav-newer" class="article-nav-link-wrap">
-      <div class="article-nav-caption">下一篇</div>
-      <div class="article-nav-title">
-        
-          CSS-元素垂直居中
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/07/04/CSS-%E9%80%89%E6%8B%A9%E5%99%A8%E4%BC%98%E5%85%88%E7%BA%A7/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-caption">上一篇</div>
-      <div class="article-nav-title">CSS-选择器优先级</div>
+      <div class="article-nav-title">使用Typescript编写和发布npm包</div>
     </a>
   
 </nav>
@@ -215,15 +220,15 @@
     <section class="share">
         <!-- <div class="share-title">分享</div>
         <a class="share-item" target="_blank"
-            href="https://twitter.com/share?text=JavaScript-数据类型 - Lean's blog&url=https://leeleanlean.github.io/2021/07/04/JavaScript-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+            href="https://twitter.com/share?text=GitLab旧服务器迁移到新服务器 - Lean's blog&url=https://leeleanlean.github.io/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">
             <box-icon type='logo' name='twitter'></box-icon>
         </a>
         <a class="share-item" target="_blank"
-            href="https://www.facebook.com/sharer.php?title=JavaScript-数据类型 - Lean's blog&u=https://leeleanlean.github.io/2021/07/04/JavaScript-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+            href="https://www.facebook.com/sharer.php?title=GitLab旧服务器迁移到新服务器 - Lean's blog&u=https://leeleanlean.github.io/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">
             <box-icon name='facebook-square' type='logo' ></box-icon>
         </a> -->
         <!-- <a class="share-item" target="_blank"
-            href="https://service.weibo.com/share/share.php?title=JavaScript-数据类型 - Lean's blog&url=https://leeleanlean.github.io/2021/07/04/JavaScript-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/&pic=">
+            href="https://service.weibo.com/share/share.php?title=GitLab旧服务器迁移到新服务器 - Lean's blog&url=https://leeleanlean.github.io/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/&pic=">
             <div class="n-icon n-icon-weibo"></div>
         </a> -->
     </section>

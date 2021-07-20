@@ -175,8 +175,6 @@
 
         <div class="article-entry post-inner-html hairline" itemprop="articleBody">
             <p>ES6的特性比较多，在 ES5 发布近 6 年（2009-11 至 2015-6）之后才将其标准化。两个发布版本之间时间跨度很大，所以ES6中的特性比较多。</p>
-<span id="more"></span>
-
 <h1 id="ES6新特性"><a href="#ES6新特性" class="headerlink" title="ES6新特性"></a>ES6新特性</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 新特性 --&gt;</span><br><span class="line">- 块级作用域</span><br><span class="line">- 模板字符串</span><br><span class="line">- 解构赋值</span><br><span class="line">- 数组</span><br><span class="line">- 函数</span><br><span class="line">- 对象</span><br><span class="line">- Set结构</span><br><span class="line">- Map结构</span><br><span class="line">- 类</span><br><span class="line">- 模块化</span><br><span class="line"></span><br><span class="line">&lt;!-- 块级作用域 --&gt;</span><br><span class="line">let a = &#x27;&#x27;</span><br><span class="line">const b = &#x27;&#x27;</span><br><span class="line"></span><br><span class="line">&lt;!-- 模板字符串 --&gt;</span><br><span class="line">name = &#x27;lee&#x27;</span><br><span class="line">let str = `$&#123;name&#125;`</span><br><span class="line"></span><br><span class="line">&lt;!-- 解构赋值 --&gt;</span><br><span class="line">- const [first, second] = arr;</span><br><span class="line">- const &#123; firstName, lastName &#125; = obj;</span><br><span class="line">- const obj = &#123;a, b, c&#125;</span><br><span class="line">- functon fullName (&#123;firstName, lastName&#125;) &#123;&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 数组 --&gt;</span><br><span class="line">- 展开运算符(复制/合并数组)</span><br><span class="line">- Array.from</span><br><span class="line"></span><br><span class="line">&lt;!-- 函数 --&gt;</span><br><span class="line">- 箭头函数(this指向当前作用域/没有arguments)</span><br><span class="line">- 可选参数/默认参数/剩余参数</span><br><span class="line">- new.target</span><br><span class="line"></span><br><span class="line">&lt;!-- 对象 --&gt;</span><br><span class="line">- 动态属性名</span><br><span class="line">- 增强写法</span><br><span class="line">- object.is</span><br><span class="line">- object.assign</span><br><span class="line">- super 指向当前对象的原型对象</span><br><span class="line"></span><br><span class="line">&lt;!-- Set结构 --&gt;</span><br><span class="line">- 类数组，值不重复</span><br><span class="line">- keys()/values()/entries()</span><br><span class="line">- add/has/delete/clear</span><br><span class="line"></span><br><span class="line">&lt;!-- Map结构 --&gt;</span><br><span class="line">- 值=&gt;值 对应关系</span><br><span class="line">- set/get/has/delete/clear</span><br><span class="line">- keys()/values()/entries()</span><br><span class="line"></span><br><span class="line">&lt;!-- 类 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 模块化 --&gt;</span><br><span class="line">- import &#x27;./13-module1.js&#x27;;</span><br><span class="line">- import &#123; m1, m2 &#125; from &#x27;index.js&#x27;;</span><br><span class="line">- import m from &#x27;index.js&#x27;;</span><br><span class="line">- import m, &#123; m1, m2 &#125; from &#x27;index.js&#x27;;</span><br><span class="line">- import &#123; m as n &#125; from &#x27;index.js&#x27;;</span><br></pre></td></tr></table></figure>
         </div>
 
@@ -292,7 +290,7 @@
   <div class="widget-wrap widget-tags">
     <div class="widget-title"><span>Tags</span></div>
     <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NPM/" rel="tag">NPM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/others/" rel="tag">others</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitLab/" rel="tag">GitLab</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NPM/" rel="tag">NPM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/others/" rel="tag">others</a></li></ul>
     </div>
   </div>
 
@@ -303,6 +301,10 @@
     <div class="widget-title"><span>Recent Posts</span></div>
     <div class="widget-inner">
       <ul>
+        
+          <li>
+            <a href="/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">GitLab旧服务器迁移到新服务器</a>
+          </li>
         
           <li>
             <a href="/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/">使用Typescript编写和发布npm包</a>
@@ -318,10 +320,6 @@
         
           <li>
             <a href="/2021/07/04/JavaScript-DOM%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/">JavaScript-DOM常用操作方法</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/04/HTML-viewport/">HTML-viewport</a>
           </li>
         
       </ul>
