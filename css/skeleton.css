@@ -62,7 +62,7 @@
   }
 
   .three.columns {
-    width: 22%;
+    width: 20%;
   }
 
   .four.columns {
@@ -286,8 +286,10 @@ a:not(.icon) {
 
 a:hover:not(.icon),
 a:focus:not(.icon) {
-  background-position: 0 100%;
-  color: #fff;
+  border-bottom: 1px solid #e74e3d;
+  color: #e73e3d;
+  /* background-position: 0 100%; */
+  /* color: #fff; */
 }
 
 /* a:hover {
