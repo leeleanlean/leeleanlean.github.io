@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://leeleanlean.github.io/2021/07/04/JavaScript-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96%E6%93%8D%E4%BD%9C/">
   
-  <meta name="description" content="substring(start, end) | slice(start, end) | substr(start, length) 字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第">
+  <meta name="description" content="字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第一个 s.substring(0, 1) 3. 截取最后一个 s.substring(s.length - 1) 4. 从第n个截取">
   
   
   <meta name="keywords" content="Lean&#39;s blog">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="JavaScript-字符串截取操作" />
   
-  <meta property="og:description" content="substring(start, end) | slice(start, end) | substr(start, length) 字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第">
+  <meta property="og:description" content="字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第一个 s.substring(0, 1) 3. 截取最后一个 s.substring(s.length - 1) 4. 从第n个截取">
   
   <meta property="og:url" content="https://leeleanlean.github.io/2021/07/04/JavaScript-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96%E6%93%8D%E4%BD%9C/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="JavaScript-字符串截取操作">
   
-  <meta name="twitter:description" content="substring(start, end) | slice(start, end) | substr(start, length) 字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第">
+  <meta name="twitter:description" content="字符串截取操作&amp;lt;!-- substring(start, end) --&amp;gt;  # Tips 1. 参数不能为负数，start end大小会互换 2. 截取第一个 s.substring(0, 1) 3. 截取最后一个 s.substring(s.length - 1) 4. 从第n个截取">
   
   
   <meta name="twitter:image" content="https://leeleanlean.github.ioundefined">
@@ -188,8 +188,7 @@
         <div class="trans">
             <h2>JavaScript-字符串截取操作</h2>
 
-  <p>substring(start, end) | slice(start, end) | substr(start, length)</p>
-<h1 id="字符串截取操作"><a href="#字符串截取操作" class="headerlink" title="字符串截取操作"></a>字符串截取操作</h1><pre class="line-numbers language-none"><code class="language-none">&lt;!-- substring(start, end) --&gt;
+  <h1 id="字符串截取操作"><a href="#字符串截取操作" class="headerlink" title="字符串截取操作"></a>字符串截取操作</h1><pre class="line-numbers language-none"><code class="language-none">&lt;!-- substring(start, end) --&gt;
 
 # Tips
 1. 参数不能为负数，start end大小会互换

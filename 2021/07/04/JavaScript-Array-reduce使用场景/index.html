@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://leeleanlean.github.io/2021/07/04/JavaScript-Array-reduce%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/">
   
-  <meta name="description" content="reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。 JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compu">
+  <meta name="description" content="JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compute &amp;#x3D; (numbers, callback) &amp;#x3D;&amp;gt; numbers.re">
   
   
   <meta name="keywords" content="Lean&#39;s blog">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="JavaScript-Array-reduce使用场景" />
   
-  <meta property="og:description" content="reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。 JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compu">
+  <meta property="og:description" content="JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compute &amp;#x3D; (numbers, callback) &amp;#x3D;&amp;gt; numbers.re">
   
   <meta property="og:url" content="https://leeleanlean.github.io/2021/07/04/JavaScript-Array-reduce%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="JavaScript-Array-reduce使用场景">
   
-  <meta name="twitter:description" content="reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。 JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compu">
+  <meta name="twitter:description" content="JavaScript-Array-reduce使用场景累计计算const numbers &amp;#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5] const compute &amp;#x3D; (numbers, callback) &amp;#x3D;&amp;gt; numbers.re">
   
   
   <meta name="twitter:image" content="https://leeleanlean.github.ioundefined">
@@ -188,8 +188,7 @@
         <div class="trans">
             <h2>JavaScript-Array-reduce使用场景</h2>
 
-  <p>reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。</p>
-<h1 id="JavaScript-Array-reduce使用场景"><a href="#JavaScript-Array-reduce使用场景" class="headerlink" title="JavaScript-Array-reduce使用场景"></a>JavaScript-Array-reduce使用场景</h1><h2 id="累计计算"><a href="#累计计算" class="headerlink" title="累计计算"></a>累计计算</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
+  <h1 id="JavaScript-Array-reduce使用场景"><a href="#JavaScript-Array-reduce使用场景" class="headerlink" title="JavaScript-Array-reduce使用场景"></a>JavaScript-Array-reduce使用场景</h1><h2 id="累计计算"><a href="#累计计算" class="headerlink" title="累计计算"></a>累计计算</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
 const compute &#x3D; (numbers, callback) &#x3D;&gt; numbers.reduce((pre, cur) &#x3D;&gt; callback(pre, cur))
 
 console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre + cur))

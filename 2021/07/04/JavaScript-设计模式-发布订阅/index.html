@@ -17,7 +17,7 @@
   
   <link rel="canonical" href="https://leeleanlean.github.io/2021/07/04/JavaScript-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85/">
   
-  <meta name="description" content="在发布订阅模式里，发布者，并不会直接通知订阅者，换句话说，发布者和订阅者，彼此互不相识。 设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;  ">
+  <meta name="description" content="设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;    &amp;#x2F;**    * 订阅事件 - 添加处理函数到事件中    * @param">
   
   
   <meta name="keywords" content="Lean&#39;s blog">
@@ -30,14 +30,14 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="JavaScript-设计模式-发布订阅" />
   
-  <meta property="og:description" content="在发布订阅模式里，发布者，并不会直接通知订阅者，换句话说，发布者和订阅者，彼此互不相识。 设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;  ">
+  <meta property="og:description" content="设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;    &amp;#x2F;**    * 订阅事件 - 添加处理函数到事件中    * @param">
   
   <meta property="og:url" content="https://leeleanlean.github.io/2021/07/04/JavaScript-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85/" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="JavaScript-设计模式-发布订阅">
   
-  <meta name="twitter:description" content="在发布订阅模式里，发布者，并不会直接通知订阅者，换句话说，发布者和订阅者，彼此互不相识。 设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;  ">
+  <meta name="twitter:description" content="设计模式-发布订阅式class EventBus &amp;#123;   constructor () &amp;#123;     this.subscribe &amp;#x3D; &amp;#123;&amp;#125;   &amp;#125;    &amp;#x2F;**    * 订阅事件 - 添加处理函数到事件中    * @param">
   
   
   <meta name="twitter:image" content="https://leeleanlean.github.ioundefined">
@@ -188,8 +188,7 @@
         <div class="trans">
             <h2>JavaScript-设计模式-发布订阅</h2>
 
-  <p>在发布订阅模式里，发布者，并不会直接通知订阅者，换句话说，发布者和订阅者，彼此互不相识。</p>
-<h1 id="设计模式-发布订阅式"><a href="#设计模式-发布订阅式" class="headerlink" title="设计模式-发布订阅式"></a>设计模式-发布订阅式</h1><pre class="line-numbers language-none"><code class="language-none">class EventBus &#123;
+  <h1 id="设计模式-发布订阅式"><a href="#设计模式-发布订阅式" class="headerlink" title="设计模式-发布订阅式"></a>设计模式-发布订阅式</h1><pre class="line-numbers language-none"><code class="language-none">class EventBus &#123;
   constructor () &#123;
     this.subscribe &#x3D; &#123;&#125;
   &#125;
