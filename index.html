@@ -1,1009 +1,450 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    
-    <title>Lean&#39;s blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
 
-    
-        <meta property="algolia:search" data-application-id="MDS35OWBRH" data-api-key="e2458594d3030b98c795c94d5bdfc473" data-index-name="dev_lean">
-    
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
 
-    
+  
+  <title>Lean&#39;s blog</title>
+  
+  <link rel="sitemap" href="https://leeleanlean.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://leeleanlean.github.io/">
+  
+  <meta name="description" content="Lean&#39;s blog">
+  
+  
+  <meta name="keywords" content="Lean&#39;s blog">
+  
+  <meta name="author" content="LeeLean">
+  
+  <meta property="og:image" content="https://leeleanlean.github.io/images/thumbnail.jpg">
+  
+  <meta property="og:site_name" content="Lean&#39;s blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Lean&#39;s blog" />
+  
+  <meta property="og:description" content="Lean&#39;s blog">
+  
+  <meta property="og:url" content="https://leeleanlean.github.io/" />
 
-    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lean&#39;s blog">
+  
+  <meta name="twitter:description" content="Lean&#39;s blog">
+  
+  
+  <meta name="twitter:image" content="https://leeleanlean.github.io/images/thumbnail.jpg">
+  
+  <meta name="twitter:url" content="https://leeleanlean.github.io/" />
 
-    
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💘</text></svg>">
-    
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
-    
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
 
-    
-<link rel="stylesheet" href="/dist/build.css?v=1623049492098.css">
+  
+<link rel="stylesheet" href="/css/skeleton.css">
 
+  
+<link rel="stylesheet" href="/css/custom.css">
 
-    <script>
-        window.isPost = false
-        window.aomori = {
-            
-            
-            valine: {
-                enable: true,
-                appId: "H0pEwlNGPt4BvFzkzUeamdlc-gzGzoHsz",
-                appKey: "QUqnLJI0259YrDKLENsrG7C3",
-            },
-            
-            
-        }
-        window.aomori_logo_typed_animated = false
-        window.aomori_search_algolia = true
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
 
-    </script>
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #e74e3d;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #e74e3d 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #e74e3d;
+  }
+  .nanobar .bar {
+    background: #e74e3d;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #e74e3d;
+    border-color: #e74e3d;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #e74e3d;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div>
 
-    <div class="container">
-    <header class="header">
-        <div class="header-type">
-            
-            <div class="header-type-avatar avatar avatar-sm">
-                <img src="/images/avatar.jpg" alt="LeeLean">
-            </div>
-            
-            <div class="header-type-inner">
-                
-                    <a class="header-type-title" href="/">Lean&#39;s blog</a>
-                
-    
-                
-            </div>
-        </div>
-        <div class="header-menu">
-            <div class="header-menu-inner">
-                
-                <a href="/">Home</a>
-                
-                <a href="/archives">Archives</a>
-                
-                <a href="/friends">Friends</a>
-                
-            </div>
-            <div class="header-menu-social">
-                
-    <a class="social" target="_blank" href="https://github.com/leeleanlean">
-        <box-icon type='logo' name='github'></box-icon>
+        <div class="row">
+  <div class="two columns" style="max-width: 50px">
+    <h1 class="mt-2 mode">
+      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="six columns ml-1">
+    <h1 class="mt-2">
+      Lean&#39;s Blog
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/archives" class="ml">Archives</a>
+          
+        
+          
+          <a href="/about" class="ml">About</a>
+          
+        
+          
+          <a href="/github" class="ml">Github</a>
+          
+        
+        
+          
+            <a href="mailto:leeleanlean@163.com" target="_blank" class="ml">Email</a>
+          
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+          <!-- <div class="row">
+  <div class="column">
+    <h2 class="mb-2">I&#39;m Lean</h2>
+    <p>A student and web developer from Indonesia 🇮🇩</p>
+    <p>This is Minima, an undoubtedly simple and lightweight dark/light mode theme for Hexo. I created this from scratch using Skeleton CSS boilerplate. It only uses CSS and Vanilla JS, without using unnecessary third-party &#39;render-blocking&#39; libraries! 😁</p>
+  </div>
+</div> -->
+
+<h3>Recent Posts</h3>
+
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月19日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/" >
+      
+        GitLab旧服务器迁移到新服务器
+      
     </a>
+  </div>
+</div>
 
-    <a class="social" target="_blank" href="/sitemap.xml">
-        <box-icon type='' name='rss'></box-icon>
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月17日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/" >
+      
+        使用Typescript编写和发布npm包
+      
     </a>
-
-            </div>
-        </div>
-
-        <div class="header-menu-mobile">
-            <div class="header-menu-mobile-inner" id="mobile-menu-open">
-                <i class="icon icon-menu"></i>
-            </div>
-        </div>
-    </header>
-
-    <div class="header-menu-mobile-menu">
-        <div class="header-menu-mobile-menu-bg"></div>
-        <div class="header-menu-mobile-menu-wrap">
-            <div class="header-menu-mobile-menu-inner">
-                <div class="header-menu-mobile-menu-close" id="mobile-menu-close">
-                    <i class="icon icon-cross"></i>
-                </div>
-                <div class="header-menu-mobile-menu-list">
-                    
-                    <a href="/">Home</a>
-                    
-                    <a href="/archives">Archives</a>
-                    
-                    <a href="/friends">Friends</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-    <div class="container">
-        <div class="main">
-            <section class="inner">
-                <section class="inner-main">
-                    <div class="index">
-  
-    
-      <article
-id="post-GitLab旧服务器迁移到新服务器"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">GitLab旧服务器迁移到新服务器</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h1 id="gitlab-旧服务器迁移到新服务器"><a href="#gitlab-旧服务器迁移到新服务器" class="headerlink" title="gitlab 旧服务器迁移到新服务器"></a>gitlab 旧服务器迁移到新服务器</h1><h2 id="1-查看旧服务器gitlab版本"><a href="#1-查看旧服务器gitlab版本" class="headerlink" title="1. 查看旧服务器gitlab版本"></a>1. 查看旧服务器gitlab版本</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /opt/gitlab/embedded/service/gitlab-rails/VERSION</span><br><span class="line">// or</span><br><span class="line">gitlab-rake gitlab:env:info</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-新服务器安装对应版本的gitlab"><a href="#2-新服务器安装对应版本的gitlab" class="headerlink" title="2. 新服务器安装对应版本的gitlab"></a>2. 新服务器安装对应版本的gitlab</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">midkr gitlab</span><br><span class="line"></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm</span><br><span class="line">yum -y install gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-配置url和端口号"><a href="#2-2-配置url和端口号" class="headerlink" title="2.2 配置url和端口号"></a>2.2 配置url和端口号</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/gitlab/gitlab.rb</span><br><span class="line">external_url &#x27;http://xx.xx.xx.xx&#x27;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-重置并启动"><a href="#2-3-重置并启动" class="headerlink" title="2.3 重置并启动"></a>2.3 重置并启动</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gitlab-ctl reconfigure</span><br><span class="line">gitlab-ctl restart</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-旧服务器上备份gitlab数据"><a href="#3-旧服务器上备份gitlab数据" class="headerlink" title="3. 旧服务器上备份gitlab数据"></a>3. 旧服务器上备份gitlab数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /var/opt/gitlab/backups/</span><br><span class="line">gitlab-rake gitlab:backup:create</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-新服务器获取旧服务器备份的gitlab数据"><a href="#4-新服务器获取旧服务器备份的gitlab数据" class="headerlink" title="4. 新服务器获取旧服务器备份的gitlab数据"></a>4. 新服务器获取旧服务器备份的gitlab数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 在新服务器下面命令</span><br><span class="line">scp 旧服务器用户名@旧服务器IP:/var/opt/gitlab/backups/1626696893_2021_07_19_10.0.0_gitlab_backup.tar /var/opt/gitlab/backups</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="5-新服务器上恢复数据"><a href="#5-新服务器上恢复数据" class="headerlink" title="5. 新服务器上恢复数据"></a>5. 新服务器上恢复数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// 停止数据连接服务</span><br><span class="line">gitlab-ctl stop unicorn</span><br><span class="line">gitlab-ctl stop sidekiq</span><br><span class="line"></span><br><span class="line">// 开始恢复</span><br><span class="line">chmod 777 xxx</span><br><span class="line">gitlab-rake gitlab:backup:restore BACKUP=xxx</span><br><span class="line"></span><br><span class="line">// 启动gitlab</span><br><span class="line">gitlab-ctl start</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-新服务器修改默认仓储目录"><a href="#6-新服务器修改默认仓储目录" class="headerlink" title="6. 新服务器修改默认仓储目录"></a>6. 新服务器修改默认仓储目录</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 创建目录</span><br><span class="line">mkdir /data/gitlab</span><br><span class="line"></span><br><span class="line">// 修改配置参数</span><br><span class="line">vim /etc/gitlab/gitlab.rb</span><br><span class="line">git_data_dir &quot;/data/gitlab&quot;</span><br><span class="line"></span><br><span class="line">// 重新编译</span><br><span class="line">gitlab-ctl reconfigure</span><br><span class="line"></span><br><span class="line">// git_data_dir下会生成repositories，恢复数据或者重新创建仓库即可</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-19T12:56:00.000Z" itemprop="datePublished">2021-07-19</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitLab/" rel="tag">GitLab</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-NPM-使用Typescript编写和发布npm包"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/">使用Typescript编写和发布npm包</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <h2 id="1-初始化-Git-环境"><a href="#1-初始化-Git-环境" class="headerlink" title="1. 初始化 Git 环境"></a>1. 初始化 Git 环境</h2><p>在GitHub上创建一个仓库，克隆到本地</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/lismill/webpack-upload-assets-plugin.git</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-初始化-NPM-包"><a href="#2-初始化-NPM-包" class="headerlink" title="2. 初始化 NPM 包"></a>2. 初始化 NPM 包</h2><p>根据提示，填写相应信息。生成<code>package.json</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-安装Typescript"><a href="#3-安装Typescript" class="headerlink" title="3. 安装Typescript"></a>3. 安装Typescript</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i typescript -D</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-配置tsconfig-json"><a href="#4-配置tsconfig-json" class="headerlink" title="4. 配置tsconfig.json"></a>4. 配置tsconfig.json</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;compilerOptions&quot;: &#123;</span><br><span class="line">    &quot;target&quot;: &quot;es5&quot;,</span><br><span class="line">    &quot;module&quot;: &quot;commonjs&quot;,</span><br><span class="line">    &quot;declaration&quot;: true,</span><br><span class="line">    &quot;outDir&quot;: &quot;./dist&quot;,</span><br><span class="line">    &quot;strict&quot;: true</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-编译"><a href="#5-编译" class="headerlink" title="5. 编译"></a>5. 编译</h2><p>添加编译命令到 <code>package.json</code> 文件中</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;webpack-upload-assets-plugin&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</span><br><span class="line">  &quot;description&quot;: &quot;webpack-upload-assets-plugin&quot;,</span><br><span class="line">  &quot;main&quot;: &quot;index.js&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;build&quot;: &quot;tsc&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;repository&quot;: &#123;</span><br><span class="line">    &quot;type&quot;: &quot;git&quot;,</span><br><span class="line">    &quot;url&quot;: &quot;git+https://github.com/lismill/webpack-upload-assets-plugin.git&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;keywords&quot;: [</span><br><span class="line">    &quot;webpack&quot;,</span><br><span class="line">    &quot;upload&quot;,</span><br><span class="line">    &quot;assets&quot;,</span><br><span class="line">    &quot;server&quot;,</span><br><span class="line">    &quot;plugin&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;author&quot;: &quot;lismill&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;MIT&quot;,</span><br><span class="line">  &quot;bugs&quot;: &#123;</span><br><span class="line">    &quot;url&quot;: &quot;https://github.com/lismill/webpack-upload-assets-plugin/issues&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;homepage&quot;: &quot;https://github.com/lismill/webpack-upload-assets-plugin#readme&quot;,</span><br><span class="line">  &quot;devDependencies&quot;: &#123;</span><br><span class="line">    &quot;typescript&quot;: &quot;^4.3.5&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="6-发布"><a href="#6-发布" class="headerlink" title="6. 发布"></a>6. 发布</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm adduser</span><br><span class="line"></span><br><span class="line">npm publish</span><br></pre></td></tr></table></figure>
-
-<h2 id="7-添加-CI（持续集成）"><a href="#7-添加-CI（持续集成）" class="headerlink" title="7. 添加 CI（持续集成）"></a>7. 添加 CI（持续集成）</h2><p>1）登录 <a target="_blank" rel="noopener" href="https://travis-ci.org/">Travis CI</a></p>
-<p>2）点击 “Sign in with Github”</p>
-<p>3）勾选需要持续集成的项目</p>
-<p>4）添加 travis 的配置文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">language : node_js</span><br><span class="line">node_js :</span><br><span class="line"> - stable</span><br><span class="line">install:</span><br><span class="line"> - npm install</span><br><span class="line">script:</span><br><span class="line"> - npm run build</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li> 代码推送到远端，查看构建状态</li>
-</ol>
-<p>6）获取徽章图</p>
-<p>7）将徽章添加到 README 中</p>
-<p>8）提交，推送到 GitHub 仓库</p>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-17T10:22:00.000Z" itemprop="datePublished">2021-07-17</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NPM/" rel="tag">NPM</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-JavaScript-Promise"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/JavaScript-Promise/">JavaScript-Promise</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>异步编程的一种解决方案，其实就是一个构造函数</p>
-<h1 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">异步编程的一种解决方案，其实就是一个构造函数</span><br><span class="line"></span><br><span class="line">&lt;!-- 三种状态 --&gt;</span><br><span class="line">pending =&gt; fulfilled || rejected</span><br><span class="line"></span><br><span class="line">&lt;!-- 原型方法 --&gt;</span><br><span class="line">&lt;!-- then/catch/finally --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- all/race --&gt;</span><br><span class="line">all: </span><br><span class="line">全部执行完成 =&gt; then(结果数组)</span><br><span class="line">有失败 =&gt; catch(失败结果)</span><br><span class="line"></span><br><span class="line">race:</span><br><span class="line">第一个执行完成 =&gt; then(结果)</span><br><span class="line">有失败 =&gt; catch(失败结果)</span><br></pre></td></tr></table></figure>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T09:36:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-JavaScript-ES6新特性"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/JavaScript-ES6%E6%96%B0%E7%89%B9%E6%80%A7/">JavaScript-ES6新特性</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>ES6的特性比较多，在 ES5 发布近 6 年（2009-11 至 2015-6）之后才将其标准化。两个发布版本之间时间跨度很大，所以ES6中的特性比较多。</p>
-<h1 id="ES6新特性"><a href="#ES6新特性" class="headerlink" title="ES6新特性"></a>ES6新特性</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 新特性 --&gt;</span><br><span class="line">- 块级作用域</span><br><span class="line">- 模板字符串</span><br><span class="line">- 解构赋值</span><br><span class="line">- 数组</span><br><span class="line">- 函数</span><br><span class="line">- 对象</span><br><span class="line">- Set结构</span><br><span class="line">- Map结构</span><br><span class="line">- 类</span><br><span class="line">- 模块化</span><br><span class="line"></span><br><span class="line">&lt;!-- 块级作用域 --&gt;</span><br><span class="line">let a = &#x27;&#x27;</span><br><span class="line">const b = &#x27;&#x27;</span><br><span class="line"></span><br><span class="line">&lt;!-- 模板字符串 --&gt;</span><br><span class="line">name = &#x27;lee&#x27;</span><br><span class="line">let str = `$&#123;name&#125;`</span><br><span class="line"></span><br><span class="line">&lt;!-- 解构赋值 --&gt;</span><br><span class="line">- const [first, second] = arr;</span><br><span class="line">- const &#123; firstName, lastName &#125; = obj;</span><br><span class="line">- const obj = &#123;a, b, c&#125;</span><br><span class="line">- functon fullName (&#123;firstName, lastName&#125;) &#123;&#125;</span><br><span class="line"></span><br><span class="line">&lt;!-- 数组 --&gt;</span><br><span class="line">- 展开运算符(复制/合并数组)</span><br><span class="line">- Array.from</span><br><span class="line"></span><br><span class="line">&lt;!-- 函数 --&gt;</span><br><span class="line">- 箭头函数(this指向当前作用域/没有arguments)</span><br><span class="line">- 可选参数/默认参数/剩余参数</span><br><span class="line">- new.target</span><br><span class="line"></span><br><span class="line">&lt;!-- 对象 --&gt;</span><br><span class="line">- 动态属性名</span><br><span class="line">- 增强写法</span><br><span class="line">- object.is</span><br><span class="line">- object.assign</span><br><span class="line">- super 指向当前对象的原型对象</span><br><span class="line"></span><br><span class="line">&lt;!-- Set结构 --&gt;</span><br><span class="line">- 类数组，值不重复</span><br><span class="line">- keys()/values()/entries()</span><br><span class="line">- add/has/delete/clear</span><br><span class="line"></span><br><span class="line">&lt;!-- Map结构 --&gt;</span><br><span class="line">- 值=&gt;值 对应关系</span><br><span class="line">- set/get/has/delete/clear</span><br><span class="line">- keys()/values()/entries()</span><br><span class="line"></span><br><span class="line">&lt;!-- 类 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 模块化 --&gt;</span><br><span class="line">- import &#x27;./13-module1.js&#x27;;</span><br><span class="line">- import &#123; m1, m2 &#125; from &#x27;index.js&#x27;;</span><br><span class="line">- import m from &#x27;index.js&#x27;;</span><br><span class="line">- import m, &#123; m1, m2 &#125; from &#x27;index.js&#x27;;</span><br><span class="line">- import &#123; m as n &#125; from &#x27;index.js&#x27;;</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T09:16:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-JavaScript-DOM常用操作方法"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/JavaScript-DOM%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/">JavaScript-DOM常用操作方法</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>文档对象模型( DOM, Document Object Model )，描绘了一个层次化的节点树。通过对节点进行操作实现文档内容的增删改查。</p>
-<h1 id="DOM常用操作方法"><a href="#DOM常用操作方法" class="headerlink" title="DOM常用操作方法"></a>DOM常用操作方法</h1><p>文档对象模型( DOM, Document Object Model )，描绘了一个层次化的节点树。通过对节点进行操作实现文档内容的增删改查。</p>
-<p>节点树 - 把文档中所有的<font color='red'>内容</font>看成树上的节点。</p>
-<p>元素树 - 把文档中所有的<font color='red'>标签</font>看成树上的结点。</p>
-<h2 id="1-查找节点"><a href="#1-查找节点" class="headerlink" title="1. 查找节点"></a>1. 查找节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>document.getElementById(‘id属性值’);</td>
-<td>返回拥有指定id的第一个对象的引用</td>
-</tr>
-<tr>
-<td>document/element.getElementsByClassName(‘class属性值’);</td>
-<td>返回拥有指定class的对象集合</td>
-</tr>
-<tr>
-<td>document/element.getElementsByTagName(‘标签名’);</td>
-<td>返回拥有指定标签名的对象集合</td>
-</tr>
-<tr>
-<td>document.getElementsByName(‘name属性值’);</td>
-<td>返回拥有指定名称的对象结合</td>
-</tr>
-<tr>
-<td>document/element.querySelector(‘CSS选择器’);</td>
-<td>仅返回第一个匹配的元素</td>
-</tr>
-<tr>
-<td>document/element.querySelectorAll(‘CSS选择器’);</td>
-<td>返回所有匹配的元素</td>
-</tr>
-<tr>
-<td>document.documentElement</td>
-<td>获取页面中的HTML标签</td>
-</tr>
-<tr>
-<td>document.body</td>
-<td>获取页面中的BODY标签</td>
-</tr>
-<tr>
-<td>document.all[‘’]</td>
-<td>获取页面中的所有元素节点的对象集合型</td>
-</tr>
-</tbody></table>
-<h2 id="2-新建节点"><a href="#2-新建节点" class="headerlink" title="2. 新建节点"></a>2. 新建节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>document.createElement(‘元素名’);</td>
-<td>创建新的元素节点</td>
-</tr>
-<tr>
-<td>document.createAttribute(‘属性名’);</td>
-<td>创建新的属性节点</td>
-</tr>
-<tr>
-<td>document.createTextNode(‘文本内容’);</td>
-<td>创建新的文本节点</td>
-</tr>
-<tr>
-<td>document.createComment(‘注释节点’);</td>
-<td>创建新的注释节点</td>
-</tr>
-<tr>
-<td>document.createDocumentFragment( );</td>
-<td>创建文档片段节点</td>
-</tr>
-</tbody></table>
-<h2 id="3-添加节点"><a href="#3-添加节点" class="headerlink" title="3. 添加节点"></a>3. 添加节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parent.appendChild( element/txt/comment/fragment );</td>
-<td>向父节点的最后一个子节点后追加新节点</td>
-</tr>
-<tr>
-<td>parent.insertBefore( newChild, existingChild );</td>
-<td>向父节点的某个特定子节点之前插入新节点</td>
-</tr>
-<tr>
-<td>element.setAttributeNode( attributeName );</td>
-<td>给元素增加属性节点</td>
-</tr>
-<tr>
-<td>element.setAttribute( attributeName, attributeValue );</td>
-<td>给元素增加指定属性，并设定属性值</td>
-</tr>
-</tbody></table>
-<h2 id="4-删除节点"><a href="#4-删除节点" class="headerlink" title="4. 删除节点"></a>4. 删除节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parentNode.removeChild( existingChild );</td>
-<td>删除已有的子节点，返回值为删除节点</td>
-</tr>
-<tr>
-<td>element.removeAttribute(‘属性名’);</td>
-<td>删除具有指定属性名称的属性，无返回值</td>
-</tr>
-<tr>
-<td>element.removeAttributeNode( attrNode );</td>
-<td>删除指定属性，返回值为删除的属性</td>
-</tr>
-</tbody></table>
-<h2 id="5-修改节点"><a href="#5-修改节点" class="headerlink" title="5. 修改节点"></a>5. 修改节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parentNode.replaceChild( newChild, existingChild );</td>
-<td>用新节点替换父节点中已有的子节点</td>
-</tr>
-<tr>
-<td>element.setAttributeNode( attributeName );</td>
-<td>若原元素已有该节点，此操作能达到修改该属性值的目的</td>
-</tr>
-<tr>
-<td>element.setAttribute( attributeName, attributeValue );</td>
-<td>若原元素已有该节点，此操作能达到修改该属性值的目的</td>
-</tr>
-</tbody></table>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:55:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-HTML-viewport"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/HTML-viewport/">HTML-viewport</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>移动端页面适配, 手机浏览器会把页面放入到一个虚拟的“视口”（viewpoint）中。</p>
-<h1 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">移动端页面适配, 手机浏览器会把页面放入到一个虚拟的“视口”（viewpoint）中。</span><br><span class="line"></span><br><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>介绍</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>width</td>
-<td>viewport的宽度</td>
-<td>“width-device”或一个正整数</td>
-</tr>
-<tr>
-<td>height</td>
-<td>viewport的高度</td>
-<td>“height-device”或一个正整数</td>
-</tr>
-<tr>
-<td>initial-scale</td>
-<td>页面的初始缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>minimum-scale</td>
-<td>允许最小缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>maximum-scale</td>
-<td>允许最大缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>user-scalable</td>
-<td>是否允许缩放</td>
-<td>“yes”或”no”</td>
-</tr>
-</tbody></table>
-
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:16:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-JavaScript-Array-reduce使用场景"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/JavaScript-Array-reduce%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/">JavaScript-Array-reduce使用场景</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。</p>
-<h1 id="JavaScript-Array-reduce使用场景"><a href="#JavaScript-Array-reduce使用场景" class="headerlink" title="JavaScript-Array-reduce使用场景"></a>JavaScript-Array-reduce使用场景</h1><h2 id="累计计算"><a href="#累计计算" class="headerlink" title="累计计算"></a>累计计算</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]</span><br><span class="line">const compute = (numbers, callback) =&gt; numbers.reduce((pre, cur) =&gt; callback(pre, cur))</span><br><span class="line"></span><br><span class="line">console.log(compute(numbers, (pre, cur) =&gt; pre + cur))</span><br><span class="line">// 30.5</span><br><span class="line">console.log(compute(numbers, (pre, cur) =&gt; pre - cur))</span><br><span class="line">// -28.5</span><br><span class="line">console.log(compute(numbers, (pre, cur) =&gt; pre * cur))</span><br><span class="line">// 15552</span><br><span class="line">console.log(compute(numbers, (pre, cur) =&gt; pre / cur))</span><br><span class="line">// 0.00006430041152263374</span><br><span class="line">console.log(compute(numbers, (pre, cur) =&gt; pre % cur))</span><br><span class="line">// 0</span><br></pre></td></tr></table></figure>
-
-<h2 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]</span><br><span class="line">const compute = numbers =&gt; numbers.reduce((pre, cur) =&gt; &#123;</span><br><span class="line">  !pre.includes(cur) &amp;&amp; pre.push(cur)</span><br><span class="line">  return pre</span><br><span class="line">&#125;, [])</span><br><span class="line"></span><br><span class="line">console.log(compute(numbers))</span><br><span class="line">// [ 1, 2, 3, 4, 6, 1.5 ]</span><br></pre></td></tr></table></figure>
-
-<h2 id="统计元素出现次数"><a href="#统计元素出现次数" class="headerlink" title="统计元素出现次数"></a>统计元素出现次数</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]</span><br><span class="line">const compute = numbers =&gt; numbers.reduce((pre, cur) =&gt; &#123;</span><br><span class="line">  pre[cur] === undefined ? pre[cur] = 1 : pre[cur]++</span><br><span class="line">  return pre</span><br><span class="line">&#125;, &#123;&#125;)</span><br><span class="line"></span><br><span class="line">console.log(compute(numbers))</span><br><span class="line">// &#123; &#x27;1&#x27;: 2, &#x27;2&#x27;: 2, &#x27;3&#x27;: 3, &#x27;4&#x27;: 2, &#x27;6&#x27;: 1, &#x27;1.5&#x27;: 1 &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="筛选出某个条件出现的次数"><a href="#筛选出某个条件出现的次数" class="headerlink" title="筛选出某个条件出现的次数"></a>筛选出某个条件出现的次数</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const numbers = [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]</span><br><span class="line">const compute = (numbers, callback) =&gt; numbers.reduce((pre, cur) =&gt; &#123;</span><br><span class="line">  callback(cur) &amp;&amp; pre++</span><br><span class="line">  return pre</span><br><span class="line">&#125;, 0)</span><br><span class="line"></span><br><span class="line">console.log(compute(numbers, number =&gt; number === 2))</span><br><span class="line">// 2</span><br><span class="line">console.log(compute(numbers, number =&gt; number &gt; 3))</span><br><span class="line">// 3</span><br><span class="line">console.log(compute(numbers, number =&gt; number &gt; 3 &amp;&amp; number &lt; 6))</span><br><span class="line">// 2</span><br><span class="line">console.log(compute(numbers, number =&gt; number * 3 &gt; 6))</span><br><span class="line">// 6</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:13:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-HTML-label标签"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/HTML-label%E6%A0%87%E7%AD%BE/">HTML-label标签</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>当选择该标签时，浏览器会自动聚焦到标签相关的表单控件上。</p>
-<h1 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h1><p>当选择该标签时，浏览器会自动聚焦到标签相关的表单控件上。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// id绑定</span><br><span class="line">&lt;label for=&quot;name&quot;&gt;name&lt;/label&gt;</span><br><span class="line">&lt;input type=&quot;text&quot; id=&quot;name&quot;&gt;</span><br><span class="line"></span><br><span class="line">// 嵌套绑定</span><br><span class="line">&lt;label&gt;date&lt;input type=&quot;text&quot;&gt;&lt;/label&gt;</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:11:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-JavaScript-字符串截取操作"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/JavaScript-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96%E6%93%8D%E4%BD%9C/">JavaScript-字符串截取操作</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>substring(start, end) | slice(start, end) | substr(start, length)</p>
-<h1 id="字符串截取操作"><a href="#字符串截取操作" class="headerlink" title="字符串截取操作"></a>字符串截取操作</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- substring(start, end) --&gt;</span><br><span class="line"></span><br><span class="line"># Tips</span><br><span class="line">1. 参数不能为负数，start end大小会互换</span><br><span class="line">2. 截取第一个 s.substring(0, 1)</span><br><span class="line">3. 截取最后一个 s.substring(s.length - 1)</span><br><span class="line">4. 从第n个截取到最后一个 s.substring(n)</span><br><span class="line">5. 从第m个截取到第n个 s.substring(m, n - 1)</span><br><span class="line"></span><br><span class="line">&lt;!-- slice(start, end) --&gt;</span><br><span class="line"># Tips</span><br><span class="line">1. 参数可以为负数，start end大小不会互换</span><br><span class="line">2. 截取第一个 s.slice(0, 1)</span><br><span class="line">3. 截取最后一个 s.slice(-1)</span><br><span class="line">4. 从第n个截取到最后一个 s.slice(n)</span><br><span class="line">5. 从第m个截取n个 s.slice(m, n - 1)</span><br><span class="line">6. 如果为负数，真值 = 负数 + 长度</span><br><span class="line"></span><br><span class="line">&lt;!-- substr(start, length) --&gt;</span><br><span class="line">1. 参数可以为负数，忽略length返回最后正数个字符</span><br><span class="line">2. 截取第一个 s.substr(0, 1)</span><br><span class="line">3. 截取最后一个 s.substr(-1)</span><br><span class="line">4. 从第n个截取到最后一个 s.substr(n)</span><br><span class="line">5. 从第m个截取n个 s.substr(m, n)</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:11:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-    
-      <article
-id="post-HTML-HTML5"
-class="article article-type-post"
->
-
-
-
-<div class="article-inner">
-    
-
-    <div class="article-body">
-    <header class="article-title">
-        <a href="/2021/07/04/HTML-HTML5/">HTML-HTML5</a>
-    </header>
-    <div class="article-entry post-inner-html">
-        
-        <p>HTML的下一代标准和规范</p>
-<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">HTML的下一代标准和规范</span><br><span class="line"></span><br><span class="line">&lt;!-- 新特性 --&gt;</span><br><span class="line">- 绘图画布</span><br><span class="line">- 智能表单</span><br><span class="line">- 多媒体</span><br><span class="line">- 地理定位</span><br><span class="line">- 数据存储</span><br><span class="line">- 多线程</span><br><span class="line"></span><br><span class="line">&lt;!-- 新元素 --&gt;</span><br><span class="line"># 语义和结构</span><br><span class="line">header, footer, nav, section, article, aside, progress, time, bdi, command, details, dialog, summary, figure, figcaption, mark, meter, ruby, rt, rp, wbr</span><br><span class="line"></span><br><span class="line"># 绘图画布</span><br><span class="line">canvas</span><br><span class="line"></span><br><span class="line"># 多媒体</span><br><span class="line">audio, video, source, embed, track</span><br><span class="line"></span><br><span class="line"># 表单</span><br><span class="line">datalist，keygen, output</span><br></pre></td></tr></table></figure>
-        
-    </div>
-    </div>
-
-    <div class="article-badge">
-        
-        
-    </div>
-
-</div>
-
-<footer class="article-footer">
-    <div class="article-more-info">
-    <div class="article-date">
-  <time datetime="2021-07-04T08:06:00.000Z" itemprop="datePublished">2021-07-04</time>
-</div>
-    
-        <div class="article-category">
-        <a class="article-category-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a>
-        </div>
-    
-    
-        <div class="article-tag">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
-        </div>
-    
-    </div>
-</footer>
-
-</article>
-
-    
-  
-
-  
-    <nav class="pagination">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next</a>
-    </nav>
-  
-</div>
-
-                </section>
-            </section>
-
-            
-            <aside class="sidebar sidebar-search-fix">
-                
-
-    <div class="search">
-    <div class="has-icon-right">
-        <input type="text" class="form-input" id="search" placeholder="SEARCH" autocomplete="off">
-        <div class="form-icon">
-            <box-icon name='search' color="#3c4859"></box-icon>
-        </div>
-    </div>
-    <div class="search-result" id="search-ps"></div>
-</div>
-
-
-<div class="widget" id="widget">
-    
-      
-    
-      
-  <div class="widget-wrap widget-cate">
-    <div class="widget-title"><span>Categories</span></div>
-    <div class="widget-inner">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/others/">others</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/">面试题</a></li></ul>
-    </div>
   </div>
-
-
-    
-      
-  <div class="widget-wrap widget-tags">
-    <div class="widget-title"><span>Tags</span></div>
-    <div class="widget-inner">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/GitLab/" rel="tag">GitLab</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/NPM/" rel="tag">NPM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/others/" rel="tag">others</a></li></ul>
-    </div>
-  </div>
-
-
-    
-      
-  <div class="widget-wrap widget-recent-posts">
-    <div class="widget-title"><span>Recent Posts</span></div>
-    <div class="widget-inner">
-      <ul>
-        
-          <li>
-            <a href="/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/">GitLab旧服务器迁移到新服务器</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/">使用Typescript编写和发布npm包</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/04/JavaScript-Promise/">JavaScript-Promise</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/04/JavaScript-ES6%E6%96%B0%E7%89%B9%E6%80%A7/">JavaScript-ES6新特性</a>
-          </li>
-        
-          <li>
-            <a href="/2021/07/04/JavaScript-DOM%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/">JavaScript-DOM常用操作方法</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-    
-      
-  <div class="widget-wrap widget-archive">
-    <div class="widget-title"><span>Archive</span></div>
-    <div class="widget-inner">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/">2021</a></li></ul>
-    </div>
-  </div>
-
-
-    
 </div>
 
-<div id="backtop"><i class="icon icon-arrow-up"></i></div>
-            </aside>
-            
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-Promise/" >
+      
+        JavaScript-Promise
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-ES6%E6%96%B0%E7%89%B9%E6%80%A7/" >
+      
+        JavaScript-ES6新特性
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-DOM%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/" >
+      
+        JavaScript-DOM常用操作方法
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/HTML-viewport/" >
+      
+        HTML-viewport
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-Array-reduce%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/" >
+      
+        JavaScript-Array-reduce使用场景
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/HTML-label%E6%A0%87%E7%AD%BE/" >
+      
+        HTML-label标签
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96%E6%93%8D%E4%BD%9C/" >
+      
+        JavaScript-字符串截取操作
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/HTML-HTML5/" >
+      
+        HTML-HTML5
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/HTML-%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE/" >
+      
+        HTML-语义化标签
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/CSS-%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/" >
+      
+        CSS-元素垂直居中
+      
+    </a>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="three columns left lit">
+    <p class="bottom">2021年7月4日</p>
+  </div>
+  <div class="nine columns left mb-3">
+    <a href="/2021/07/04/JavaScript-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" >
+      
+        JavaScript-数据类型
+      
+    </a>
+  </div>
+</div>
+
+
+<h3> <a href="/archives">🔥 All Posts</a></h3>
+
+          <div class="row mt-2">
+  
+    <div class="eight columns">
+      LEAN'BLOG © 2020 · Powered By Hexo
+    </div>
+    <!-- <div class="eight columns">
+      <p id="madewith">Made with ❤ and
+        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
+        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+        </a>
+        
+        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
+        
+    </div> -->
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <!-- <div class="four columns mb-3 posisi" >
+      
+      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
+        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      
+
+      
+
+      
+
+      
+
+      
+
+    </div> -->
+  
+</div>
+
         </div>
+      </div>
+
     </div>
 
-    <footer class="footer">
-    <div class="footer-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3c4859" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,240C480,235,600,181,720,186.7C840,192,960,256,1080,261.3C1200,267,1320,213,1380,186.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </div>
-
-    <div class="footer-wrap">
-        <div class="footer-inner"> 
-            Lean&#39;s blog &copy; 2021<br>
-            Powered By Hexo · Theme By <a href="https://github.com/lh1me/hexo-theme-aomori" target="_blank">Aomori</a>
-        </div>
-    </div>
-
-</footer>
-
-
-
-
-
-
-<script src="/dist/build.js?1623049492098.js"></script>
-
-
-<script src="/dist/custom.js?1623049492098.js"></script>
-
-
-
-
-
-
-
-
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
 
 </body>
 
