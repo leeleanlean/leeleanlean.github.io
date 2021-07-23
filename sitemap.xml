@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://leeleanlean.github.io/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/</loc>
+    <loc>https://leeleanlean.github.io/2021/07/22/nvm%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeleanlean.github.io/2021/07/22/nvm%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://leeleanlean.github.io/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/</loc>
     
     <lastmod>2021-07-22</lastmod>
     
@@ -134,17 +134,10 @@
     
   </url>
   
-  <url>
-    <loc>https://leeleanlean.github.io/2021/07/04/hello-world/</loc>
-    
-    <lastmod>2021-07-14</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://leeleanlean.github.io/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -152,49 +145,42 @@
   
   <url>
     <loc>https://leeleanlean.github.io/tags/css/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/tags/GitLab/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/tags/html/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/tags/javascript/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/tags/NPM/</loc>
-    <lastmod>2021-07-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://leeleanlean.github.io/tags/others/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/tags/nvm/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -203,21 +189,14 @@
   
   <url>
     <loc>https://leeleanlean.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://leeleanlean.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-07-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://leeleanlean.github.io/categories/others/</loc>
-    <lastmod>2021-07-22</lastmod>
+    <lastmod>2021-07-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
