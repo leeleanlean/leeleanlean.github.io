@@ -321,3 +321,17 @@ body.darkmode {
   }
 
 }
+.article-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.article-tag-list li {
+  list-style: none;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.pagination {
+  margin: 3rem 0 4rem 1.5rem;
+}
