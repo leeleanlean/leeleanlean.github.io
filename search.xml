@@ -925,4 +925,31 @@ npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
         <tag>nvm</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Vue.js-key的作用</title>
+    <url>/2021/07/27/vue.js-key%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 作用 </span>
+在虚拟<span class="token constant">DOM</span>算法中辨识新旧nodes
+
+<span class="token comment">// 类型</span>
+key的值可以是number和string
+
+<span class="token comment">// 使用key</span>
+使用key会基于key的变化重新排列元素顺序<span class="token punctuation">,</span>并且会移除 key 不存在的元素。
+
+<span class="token comment">// 不适用key</span>
+不使用key最小化element的移动
+
+<span class="token comment">// 注意事项</span>
+子元素必须有独特的key，避免重复造成渲染错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>😃</p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Vue.js</tag>
+      </tags>
+  </entry>
 </search>
