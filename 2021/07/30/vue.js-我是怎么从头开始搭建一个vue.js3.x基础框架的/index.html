@@ -1,961 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>CSS-Flex</title>
-    <url>/2021/07/04/CSS-Flex/</url>
-    <content><![CDATA[<h1 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h1><p>弹性布局，使元素布局更具灵活性</p>
-<h3 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h3><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>介绍</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>flex-direction</td>
-<td>主轴方向</td>
-<td>row / row-reverse / column / column-reverse</td>
-</tr>
-<tr>
-<td>justify-content</td>
-<td>主轴对齐方式</td>
-<td>flex-start / flex-end / center / space-between / space-around</td>
-</tr>
-<tr>
-<td>flex-wrap</td>
-<td>换行</td>
-<td>nowrap / wrap / wrap-reverse</td>
-</tr>
-<tr>
-<td>flex-flow</td>
-<td>缩写</td>
-<td>flex-direction || flex-wrap</td>
-</tr>
-<tr>
-<td>align-items</td>
-<td>交叉轴对齐</td>
-<td>flex-start / flex-end / center / baseline / stretch</td>
-</tr>
-<tr>
-<td>align-content</td>
-<td>上下排布</td>
-<td>flex-start / flex-end / center / space-between / space-around / stretch</td>
-</tr>
-</tbody></table>
-<h3 id="Item属性"><a href="#Item属性" class="headerlink" title="Item属性"></a>Item属性</h3><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>order</td>
-<td>项目的排列顺序</td>
-</tr>
-<tr>
-<td>flex-grow</td>
-<td>项目的放大比例</td>
-</tr>
-<tr>
-<td>flex-shrink</td>
-<td>项目的缩小比例</td>
-</tr>
-<tr>
-<td>flex-basis</td>
-<td>分配多余空间</td>
-</tr>
-<tr>
-<td>align-self</td>
-<td>单个项目与其他项目不一样的对齐方式</td>
-</tr>
-<tr>
-<td>flex</td>
-<td>缩写flex-grow || flex-shrink || flex-basis</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS-元素垂直居中</title>
-    <url>/2021/07/04/CSS-%E5%85%83%E7%B4%A0%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD/</url>
-    <content><![CDATA[<h1 id="元素垂直居中"><a href="#元素垂直居中" class="headerlink" title="元素垂直居中"></a>元素垂直居中</h1><pre class="line-numbers language-none"><code class="language-none">- line-height (单行)
-- flex
-- display: table-cell; vertical-align: middle;
-- 绝对定位: 0 0 0 0; margin: auto;
-- 绝对定位 50% clac(50% - (width || height) &#x2F; 2)
-- 绝对定位 50% 边距-1&#x2F;2
-- 绝对定位 50% transform: translate(-50%,-50%)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS-盒模型</title>
-    <url>/2021/07/04/CSS-%E7%9B%92%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h1><pre class="line-numbers language-none"><code class="language-none">块级元素设置尺寸后，浏览器以何种方式渲染元素
-
-&lt;!-- 标准盒模型 --&gt;
-height&#x2F;width &#x3D; content + padding * 2 + border * 2
-
-&lt;!-- IE盒模型(低版本IE) --&gt;
-width &#x3D; width
-width &#x3D; height<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<table>
-<thead>
-<tr>
-<th>值</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>content-box</td>
-<td>标准盒模型</td>
-</tr>
-<tr>
-<td>border-box</td>
-<td>IE盒模型</td>
-</tr>
-<tr>
-<td>inherit</td>
-<td>从父级继承</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS-选择器优先级</title>
-    <url>/2021/07/04/CSS-%E9%80%89%E6%8B%A9%E5%99%A8%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<h1 id="选择器优先级"><a href="#选择器优先级" class="headerlink" title="选择器优先级"></a>选择器优先级</h1><pre class="line-numbers language-none"><code class="language-none">important
-
-↓
-
-内联
-
-↓
-
-id
-
-↓
-
-class &#x3D; 属性 &#x3D; 伪类
-
-↓
-
-标签 &#x3D; 关系 &#x3D; 伪元素 
-
-↓
-
-通配符（*）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>GitLab旧服务器迁移到新服务器</title>
-    <url>/2021/07/19/GitLab%E6%97%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="gitlab-旧服务器迁移到新服务器"><a href="#gitlab-旧服务器迁移到新服务器" class="headerlink" title="gitlab 旧服务器迁移到新服务器"></a>gitlab 旧服务器迁移到新服务器</h1><h2 id="1-查看旧服务器gitlab版本"><a href="#1-查看旧服务器gitlab版本" class="headerlink" title="1. 查看旧服务器gitlab版本"></a>1. 查看旧服务器gitlab版本</h2><pre class="line-numbers language-none"><code class="language-none">cat &#x2F;opt&#x2F;gitlab&#x2F;embedded&#x2F;service&#x2F;gitlab-rails&#x2F;VERSION
-&#x2F;&#x2F; or
-gitlab-rake gitlab:env:info<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="2-新服务器安装对应版本的gitlab"><a href="#2-新服务器安装对应版本的gitlab" class="headerlink" title="2. 新服务器安装对应版本的gitlab"></a>2. 新服务器安装对应版本的gitlab</h2><h3 id="2-1-安装"><a href="#2-1-安装" class="headerlink" title="2.1 安装"></a>2.1 安装</h3><pre class="line-numbers language-none"><code class="language-none">midkr gitlab
-
-wget https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;gitlab-ce&#x2F;yum&#x2F;el7&#x2F;gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm
-yum -y install gitlab-ce-10.0.0-ce.0.el7.x86_64.rpm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-2-配置url和端口号"><a href="#2-2-配置url和端口号" class="headerlink" title="2.2 配置url和端口号"></a>2.2 配置url和端口号</h3><pre class="line-numbers language-none"><code class="language-none">vim &#x2F;etc&#x2F;gitlab&#x2F;gitlab.rb
-external_url &#39;http:&#x2F;&#x2F;xx.xx.xx.xx&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h3 id="2-3-重置并启动"><a href="#2-3-重置并启动" class="headerlink" title="2.3 重置并启动"></a>2.3 重置并启动</h3><pre class="line-numbers language-none"><code class="language-none">gitlab-ctl reconfigure
-gitlab-ctl restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="3-旧服务器上备份gitlab数据"><a href="#3-旧服务器上备份gitlab数据" class="headerlink" title="3. 旧服务器上备份gitlab数据"></a>3. 旧服务器上备份gitlab数据</h2><pre class="line-numbers language-none"><code class="language-none">cd &#x2F;var&#x2F;opt&#x2F;gitlab&#x2F;backups&#x2F;
-gitlab-rake gitlab:backup:create<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h2 id="4-新服务器获取旧服务器备份的gitlab数据"><a href="#4-新服务器获取旧服务器备份的gitlab数据" class="headerlink" title="4. 新服务器获取旧服务器备份的gitlab数据"></a>4. 新服务器获取旧服务器备份的gitlab数据</h2><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 在新服务器下面命令
-scp 旧服务器用户名@旧服务器IP:&#x2F;var&#x2F;opt&#x2F;gitlab&#x2F;backups&#x2F;1626696893_2021_07_19_10.0.0_gitlab_backup.tar &#x2F;var&#x2F;opt&#x2F;gitlab&#x2F;backups<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<h2 id="5-新服务器上恢复数据"><a href="#5-新服务器上恢复数据" class="headerlink" title="5. 新服务器上恢复数据"></a>5. 新服务器上恢复数据</h2><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 停止数据连接服务
-gitlab-ctl stop unicorn
-gitlab-ctl stop sidekiq
-
-&#x2F;&#x2F; 开始恢复
-chmod 777 xxx
-gitlab-rake gitlab:backup:restore BACKUP&#x3D;xxx
-
-&#x2F;&#x2F; 启动gitlab
-gitlab-ctl start<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="6-新服务器修改默认仓储目录"><a href="#6-新服务器修改默认仓储目录" class="headerlink" title="6. 新服务器修改默认仓储目录"></a>6. 新服务器修改默认仓储目录</h2><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 创建目录
-mkdir &#x2F;data&#x2F;gitlab
-
-&#x2F;&#x2F; 修改配置参数
-vim &#x2F;etc&#x2F;gitlab&#x2F;gitlab.rb
-git_data_dir &quot;&#x2F;data&#x2F;gitlab&quot;
-
-&#x2F;&#x2F; 重新编译
-gitlab-ctl reconfigure
-
-&#x2F;&#x2F; git_data_dir下会生成repositories，恢复数据或者重新创建仓库即可<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>GitLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML-HTML5</title>
-    <url>/2021/07/04/HTML-HTML5/</url>
-    <content><![CDATA[<h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><pre class="line-numbers language-none"><code class="language-none">HTML的下一代标准和规范
-
-&lt;!-- 新特性 --&gt;
-- 绘图画布
-- 智能表单
-- 多媒体
-- 地理定位
-- 数据存储
-- 多线程
-
-&lt;!-- 新元素 --&gt;
-# 语义和结构
-header, footer, nav, section, article, aside, progress, time, bdi, command, details, dialog, summary, figure, figcaption, mark, meter, ruby, rt, rp, wbr
-
-# 绘图画布
-canvas
-
-# 多媒体
-audio, video, source, embed, track
-
-# 表单
-datalist，keygen, output<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML-label标签</title>
-    <url>/2021/07/04/HTML-label%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<h1 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h1><p>当选择该标签时，浏览器会自动聚焦到标签相关的表单控件上。</p>
-<pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; id绑定
-&lt;label for&#x3D;&quot;name&quot;&gt;name&lt;&#x2F;label&gt;
-&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot;&gt;
-
-&#x2F;&#x2F; 嵌套绑定
-&lt;label&gt;date&lt;input type&#x3D;&quot;text&quot;&gt;&lt;&#x2F;label&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML-viewport</title>
-    <url>/2021/07/04/HTML-viewport/</url>
-    <content><![CDATA[<h1 id="viewport"><a href="#viewport" class="headerlink" title="viewport"></a>viewport</h1><pre class="line-numbers language-none"><code class="language-none">移动端页面适配, 手机浏览器会把页面放入到一个虚拟的“视口”（viewpoint）中。
-
-&lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<table>
-<thead>
-<tr>
-<th>属性</th>
-<th>介绍</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>width</td>
-<td>viewport的宽度</td>
-<td>“width-device”或一个正整数</td>
-</tr>
-<tr>
-<td>height</td>
-<td>viewport的高度</td>
-<td>“height-device”或一个正整数</td>
-</tr>
-<tr>
-<td>initial-scale</td>
-<td>页面的初始缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>minimum-scale</td>
-<td>允许最小缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>maximum-scale</td>
-<td>允许最大缩放值</td>
-<td>数字/支持小数</td>
-</tr>
-<tr>
-<td>user-scalable</td>
-<td>是否允许缩放</td>
-<td>“yes”或”no”</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML-语义化标签</title>
-    <url>/2021/07/04/HTML-%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<h1 id="语义化标签"><a href="#语义化标签" class="headerlink" title="语义化标签"></a>语义化标签</h1><pre class="line-numbers language-none"><code class="language-none">用合适的标签来标记内容
-
-&lt;!-- 好处 --&gt;
-- 便于团队开发和维护
-- 样式禁用状态，清晰结构渲染
-- SEO
-- 便于特殊设备解析(盲人阅读器&#x2F;kindle等)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-Array-reduce使用场景</title>
-    <url>/2021/07/04/JavaScript-Array-reduce%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</url>
-    <content><![CDATA[<h1 id="JavaScript-Array-reduce使用场景"><a href="#JavaScript-Array-reduce使用场景" class="headerlink" title="JavaScript-Array-reduce使用场景"></a>JavaScript-Array-reduce使用场景</h1><h2 id="累计计算"><a href="#累计计算" class="headerlink" title="累计计算"></a>累计计算</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
-const compute &#x3D; (numbers, callback) &#x3D;&gt; numbers.reduce((pre, cur) &#x3D;&gt; callback(pre, cur))
-
-console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre + cur))
-&#x2F;&#x2F; 30.5
-console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre - cur))
-&#x2F;&#x2F; -28.5
-console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre * cur))
-&#x2F;&#x2F; 15552
-console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre &#x2F; cur))
-&#x2F;&#x2F; 0.00006430041152263374
-console.log(compute(numbers, (pre, cur) &#x3D;&gt; pre % cur))
-&#x2F;&#x2F; 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
-const compute &#x3D; numbers &#x3D;&gt; numbers.reduce((pre, cur) &#x3D;&gt; &#123;
-  !pre.includes(cur) &amp;&amp; pre.push(cur)
-  return pre
-&#125;, [])
-
-console.log(compute(numbers))
-&#x2F;&#x2F; [ 1, 2, 3, 4, 6, 1.5 ]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="统计元素出现次数"><a href="#统计元素出现次数" class="headerlink" title="统计元素出现次数"></a>统计元素出现次数</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
-const compute &#x3D; numbers &#x3D;&gt; numbers.reduce((pre, cur) &#x3D;&gt; &#123;
-  pre[cur] &#x3D;&#x3D;&#x3D; undefined ? pre[cur] &#x3D; 1 : pre[cur]++
-  return pre
-&#125;, &#123;&#125;)
-
-console.log(compute(numbers))
-&#x2F;&#x2F; &#123; &#39;1&#39;: 2, &#39;2&#39;: 2, &#39;3&#39;: 3, &#39;4&#39;: 2, &#39;6&#39;: 1, &#39;1.5&#39;: 1 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="筛选出某个条件出现的次数"><a href="#筛选出某个条件出现的次数" class="headerlink" title="筛选出某个条件出现的次数"></a>筛选出某个条件出现的次数</h2><pre class="line-numbers language-none"><code class="language-none">const numbers &#x3D; [1, 2, 1, 3, 4, 4, 3, 2, 3, 6, 1.5]
-const compute &#x3D; (numbers, callback) &#x3D;&gt; numbers.reduce((pre, cur) &#x3D;&gt; &#123;
-  callback(cur) &amp;&amp; pre++
-  return pre
-&#125;, 0)
-
-console.log(compute(numbers, number &#x3D;&gt; number &#x3D;&#x3D;&#x3D; 2))
-&#x2F;&#x2F; 2
-console.log(compute(numbers, number &#x3D;&gt; number &gt; 3))
-&#x2F;&#x2F; 3
-console.log(compute(numbers, number &#x3D;&gt; number &gt; 3 &amp;&amp; number &lt; 6))
-&#x2F;&#x2F; 2
-console.log(compute(numbers, number &#x3D;&gt; number * 3 &gt; 6))
-&#x2F;&#x2F; 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-DOM常用操作方法</title>
-    <url>/2021/07/04/JavaScript-DOM%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="DOM常用操作方法"><a href="#DOM常用操作方法" class="headerlink" title="DOM常用操作方法"></a>DOM常用操作方法</h1><p>文档对象模型( DOM, Document Object Model )，描绘了一个层次化的节点树。通过对节点进行操作实现文档内容的增删改查。</p>
-<p>节点树 - 把文档中所有的<font color='red'>内容</font>看成树上的节点。</p>
-<p>元素树 - 把文档中所有的<font color='red'>标签</font>看成树上的结点。</p>
-<h2 id="1-查找节点"><a href="#1-查找节点" class="headerlink" title="1. 查找节点"></a>1. 查找节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>document.getElementById(‘id属性值’);</td>
-<td>返回拥有指定id的第一个对象的引用</td>
-</tr>
-<tr>
-<td>document/element.getElementsByClassName(‘class属性值’);</td>
-<td>返回拥有指定class的对象集合</td>
-</tr>
-<tr>
-<td>document/element.getElementsByTagName(‘标签名’);</td>
-<td>返回拥有指定标签名的对象集合</td>
-</tr>
-<tr>
-<td>document.getElementsByName(‘name属性值’);</td>
-<td>返回拥有指定名称的对象结合</td>
-</tr>
-<tr>
-<td>document/element.querySelector(‘CSS选择器’);</td>
-<td>仅返回第一个匹配的元素</td>
-</tr>
-<tr>
-<td>document/element.querySelectorAll(‘CSS选择器’);</td>
-<td>返回所有匹配的元素</td>
-</tr>
-<tr>
-<td>document.documentElement</td>
-<td>获取页面中的HTML标签</td>
-</tr>
-<tr>
-<td>document.body</td>
-<td>获取页面中的BODY标签</td>
-</tr>
-<tr>
-<td>document.all[‘’]</td>
-<td>获取页面中的所有元素节点的对象集合型</td>
-</tr>
-</tbody></table>
-<h2 id="2-新建节点"><a href="#2-新建节点" class="headerlink" title="2. 新建节点"></a>2. 新建节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>document.createElement(‘元素名’);</td>
-<td>创建新的元素节点</td>
-</tr>
-<tr>
-<td>document.createAttribute(‘属性名’);</td>
-<td>创建新的属性节点</td>
-</tr>
-<tr>
-<td>document.createTextNode(‘文本内容’);</td>
-<td>创建新的文本节点</td>
-</tr>
-<tr>
-<td>document.createComment(‘注释节点’);</td>
-<td>创建新的注释节点</td>
-</tr>
-<tr>
-<td>document.createDocumentFragment( );</td>
-<td>创建文档片段节点</td>
-</tr>
-</tbody></table>
-<h2 id="3-添加节点"><a href="#3-添加节点" class="headerlink" title="3. 添加节点"></a>3. 添加节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parent.appendChild( element/txt/comment/fragment );</td>
-<td>向父节点的最后一个子节点后追加新节点</td>
-</tr>
-<tr>
-<td>parent.insertBefore( newChild, existingChild );</td>
-<td>向父节点的某个特定子节点之前插入新节点</td>
-</tr>
-<tr>
-<td>element.setAttributeNode( attributeName );</td>
-<td>给元素增加属性节点</td>
-</tr>
-<tr>
-<td>element.setAttribute( attributeName, attributeValue );</td>
-<td>给元素增加指定属性，并设定属性值</td>
-</tr>
-</tbody></table>
-<h2 id="4-删除节点"><a href="#4-删除节点" class="headerlink" title="4. 删除节点"></a>4. 删除节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parentNode.removeChild( existingChild );</td>
-<td>删除已有的子节点，返回值为删除节点</td>
-</tr>
-<tr>
-<td>element.removeAttribute(‘属性名’);</td>
-<td>删除具有指定属性名称的属性，无返回值</td>
-</tr>
-<tr>
-<td>element.removeAttributeNode( attrNode );</td>
-<td>删除指定属性，返回值为删除的属性</td>
-</tr>
-</tbody></table>
-<h2 id="5-修改节点"><a href="#5-修改节点" class="headerlink" title="5. 修改节点"></a>5. 修改节点</h2><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>parentNode.replaceChild( newChild, existingChild );</td>
-<td>用新节点替换父节点中已有的子节点</td>
-</tr>
-<tr>
-<td>element.setAttributeNode( attributeName );</td>
-<td>若原元素已有该节点，此操作能达到修改该属性值的目的</td>
-</tr>
-<tr>
-<td>element.setAttribute( attributeName, attributeValue );</td>
-<td>若原元素已有该节点，此操作能达到修改该属性值的目的</td>
-</tr>
-</tbody></table>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-ES6新特性</title>
-    <url>/2021/07/04/JavaScript-ES6%E6%96%B0%E7%89%B9%E6%80%A7/</url>
-    <content><![CDATA[<h1 id="ES6新特性"><a href="#ES6新特性" class="headerlink" title="ES6新特性"></a>ES6新特性</h1><pre class="line-numbers language-none"><code class="language-none">&lt;!-- 新特性 --&gt;
-- 块级作用域
-- 模板字符串
-- 解构赋值
-- 数组
-- 函数
-- 对象
-- Set结构
-- Map结构
-- 类
-- 模块化
-
-&lt;!-- 块级作用域 --&gt;
-let a &#x3D; &#39;&#39;
-const b &#x3D; &#39;&#39;
-
-&lt;!-- 模板字符串 --&gt;
-name &#x3D; &#39;lee&#39;
-let str &#x3D; &#96;$&#123;name&#125;&#96;
-
-&lt;!-- 解构赋值 --&gt;
-- const [first, second] &#x3D; arr;
-- const &#123; firstName, lastName &#125; &#x3D; obj;
-- const obj &#x3D; &#123;a, b, c&#125;
-- functon fullName (&#123;firstName, lastName&#125;) &#123;&#125;
-
-&lt;!-- 数组 --&gt;
-- 展开运算符(复制&#x2F;合并数组)
-- Array.from
-
-&lt;!-- 函数 --&gt;
-- 箭头函数(this指向当前作用域&#x2F;没有arguments)
-- 可选参数&#x2F;默认参数&#x2F;剩余参数
-- new.target
-
-&lt;!-- 对象 --&gt;
-- 动态属性名
-- 增强写法
-- object.is
-- object.assign
-- super 指向当前对象的原型对象
-
-&lt;!-- Set结构 --&gt;
-- 类数组，值不重复
-- keys()&#x2F;values()&#x2F;entries()
-- add&#x2F;has&#x2F;delete&#x2F;clear
-
-&lt;!-- Map结构 --&gt;
-- 值&#x3D;&gt;值 对应关系
-- set&#x2F;get&#x2F;has&#x2F;delete&#x2F;clear
-- keys()&#x2F;values()&#x2F;entries()
-
-&lt;!-- 类 --&gt;
-
-&lt;!-- 模块化 --&gt;
-- import &#39;.&#x2F;13-module1.js&#39;;
-- import &#123; m1, m2 &#125; from &#39;index.js&#39;;
-- import m from &#39;index.js&#39;;
-- import m, &#123; m1, m2 &#125; from &#39;index.js&#39;;
-- import &#123; m as n &#125; from &#39;index.js&#39;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-Promise</title>
-    <url>/2021/07/04/JavaScript-Promise/</url>
-    <content><![CDATA[<h1 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h1><pre class="line-numbers language-none"><code class="language-none">异步编程的一种解决方案，其实就是一个构造函数
-
-&lt;!-- 三种状态 --&gt;
-pending &#x3D;&gt; fulfilled || rejected
-
-&lt;!-- 原型方法 --&gt;
-&lt;!-- then&#x2F;catch&#x2F;finally --&gt;
-
-&lt;!-- all&#x2F;race --&gt;
-all: 
-全部执行完成 &#x3D;&gt; then(结果数组)
-有失败 &#x3D;&gt; catch(失败结果)
-
-race:
-第一个执行完成 &#x3D;&gt; then(结果)
-有失败 &#x3D;&gt; catch(失败结果)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-字符串截取操作</title>
-    <url>/2021/07/04/JavaScript-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h1 id="字符串截取操作"><a href="#字符串截取操作" class="headerlink" title="字符串截取操作"></a>字符串截取操作</h1><pre class="line-numbers language-none"><code class="language-none">&lt;!-- substring(start, end) --&gt;
-
-# Tips
-1. 参数不能为负数，start end大小会互换
-2. 截取第一个 s.substring(0, 1)
-3. 截取最后一个 s.substring(s.length - 1)
-4. 从第n个截取到最后一个 s.substring(n)
-5. 从第m个截取到第n个 s.substring(m, n - 1)
-
-&lt;!-- slice(start, end) --&gt;
-# Tips
-1. 参数可以为负数，start end大小不会互换
-2. 截取第一个 s.slice(0, 1)
-3. 截取最后一个 s.slice(-1)
-4. 从第n个截取到最后一个 s.slice(n)
-5. 从第m个截取n个 s.slice(m, n - 1)
-6. 如果为负数，真值 &#x3D; 负数 + 长度
-
-&lt;!-- substr(start, length) --&gt;
-1. 参数可以为负数，忽略length返回最后正数个字符
-2. 截取第一个 s.substr(0, 1)
-3. 截取最后一个 s.substr(-1)
-4. 从第n个截取到最后一个 s.substr(n)
-5. 从第m个截取n个 s.substr(m, n)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-数据类型</title>
-    <url>/2021/07/04/JavaScript-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><pre class="line-numbers language-none"><code class="language-none">&lt;!-- 分类 --&gt;
-基础类型 - Number String Boolean null undefined Symbol BigInt
-引用类型 - Object
-
-&lt;!-- 存储位置 --&gt;
-基础类型 - 存储在栈内存中
-引用类型 - 在栈内存中存储的为一串堆内存的地址
-
-&lt;!-- 区别 --&gt;
-数据结构堆比栈大，栈比堆快
-基础数据占用内存比较小，引用类型大小是动态的
-
-&lt;!-- 拷贝 --&gt;
-1. 浅拷贝-直接赋值
-o2 &#x3D; o1
-
-2. 浅拷贝-JSON转换拷贝
-JSON.parse(JSON.stringify())
-undefined function symbol Date RegExp Error等特殊类型有问题
-
-3. 第一层深拷贝
-...
-Object.assign()
-Array.concat()
-Array.slice()
-
-4. 深拷贝
-const deepClone &#x3D; (source) &#x3D;&gt; &#123;
-  &#x2F;&#x2F; 如果不是对象直接返回
-  if (typeof source !&#x3D;&#x3D; &#39;object&#39;) return source
-
-  &#x2F;&#x2F; 遍历拷贝
-  let target &#x3D; Array.isArray(source) ? [] : &#123;&#125;
-  for (let key in source) &#123;
-    if (typeof source[key] &#x3D;&#x3D;&#x3D; &#39;object&#39;) &#123;
-      target[key] &#x3D; deepClone(source[key])
-    &#125; else &#123;
-      target[key] &#x3D; source[key]
-    &#125;
-  &#125;
-
-  &#x2F;&#x2F; 返回深拷贝对象
-  return target
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JavaScript-设计模式-发布订阅</title>
-    <url>/2021/07/04/JavaScript-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85/</url>
-    <content><![CDATA[<h1 id="设计模式-发布订阅式"><a href="#设计模式-发布订阅式" class="headerlink" title="设计模式-发布订阅式"></a>设计模式-发布订阅式</h1><pre class="line-numbers language-none"><code class="language-none">class EventBus &#123;
-  constructor () &#123;
-    this.subscribe &#x3D; &#123;&#125;
-  &#125;
-
-  &#x2F;**
-   * 订阅事件 - 添加处理函数到事件中
-   * @params event - 事件名称
-   * @params fn - 处理函数
-   *&#x2F;
-  $on(event, fn) &#123;
-    !this.subscribe[event] &amp;&amp; (this.subscribe[event] &#x3D; [])
-    this.subscribe[event].push(fn)
-  &#125;
-
-  &#x2F;**
-   * 取消订阅 - 移除处理函数
-   * @params event - 事件名称
-   *&#x2F;
-  $off(event) &#123;
-    this.subscribe[event] &amp;&amp; delete this.subscribe[event]
-  &#125;
-
-  &#x2F;**
-   * 发布事件 - 执行处理函数
-   * @params event - 事件名称
-   *&#x2F;
-  $emit(event) &#123;
-    this.subscribe[event] &amp;&amp; this.subscribe[event].forEach(fn &#x3D;&gt; fn())
-  &#125;
-&#125;
-
-&#x2F;&#x2F; 事件中心
-const vm &#x3D; new EventBus()
-
-&#x2F;&#x2F; 订阅事件
-vm.$on(&#39;change&#39;, () &#x3D;&gt; &#123; console.log(&#39;change1...&#39;) &#125;)
-vm.$on(&#39;change&#39;, () &#x3D;&gt; &#123; console.log(&#39;change2...&#39;) &#125;)
-vm.$on(&#39;click&#39;, () &#x3D;&gt; &#123; console.log(&#39;click...&#39;) &#125;)
-
-&#x2F;&#x2F; 发布事件
-vm.$emit(&#39;change&#39;) &#x2F;&#x2F; change1... change2...
-vm.$emit(&#39;click&#39;) &#x2F;&#x2F; click...
-
-&#x2F;&#x2F; 取消订阅
-vm.$off(&#39;change&#39;)
-vm.$off(&#39;click&#39;)
-
-&#x2F;&#x2F; 发布事件
-vm.$emit(&#39;change&#39;) &#x2F;&#x2F;
-vm.$emit(&#39;click&#39;) &#x2F;&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      <categories>
-        <category>面试题</category>
-      </categories>
-      <tags>
-        <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>使用Typescript编写和发布npm包</title>
-    <url>/2021/07/17/NPM-%E4%BD%BF%E7%94%A8Typescript%E7%BC%96%E5%86%99%E5%92%8C%E5%8F%91%E5%B8%83npm%E5%8C%85/</url>
-    <content><![CDATA[<h2 id="1-初始化-Git-环境"><a href="#1-初始化-Git-环境" class="headerlink" title="1. 初始化 Git 环境"></a>1. 初始化 Git 环境</h2><p>在GitHub上创建一个仓库，克隆到本地</p>
-<pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;lismill&#x2F;webpack-upload-assets-plugin.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="2-初始化-NPM-包"><a href="#2-初始化-NPM-包" class="headerlink" title="2. 初始化 NPM 包"></a>2. 初始化 NPM 包</h2><p>根据提示，填写相应信息。生成<code>package.json</code></p>
-<pre class="line-numbers language-none"><code class="language-none">npm init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="3-安装Typescript"><a href="#3-安装Typescript" class="headerlink" title="3. 安装Typescript"></a>3. 安装Typescript</h2><pre class="line-numbers language-none"><code class="language-none">npm i typescript -D<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="4-配置tsconfig-json"><a href="#4-配置tsconfig-json" class="headerlink" title="4. 配置tsconfig.json"></a>4. 配置tsconfig.json</h2><pre class="line-numbers language-none"><code class="language-none">&#123;
-  &quot;compilerOptions&quot;: &#123;
-    &quot;target&quot;: &quot;es5&quot;,
-    &quot;module&quot;: &quot;commonjs&quot;,
-    &quot;declaration&quot;: true,
-    &quot;outDir&quot;: &quot;.&#x2F;dist&quot;,
-    &quot;strict&quot;: true
-  &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="5-编译"><a href="#5-编译" class="headerlink" title="5. 编译"></a>5. 编译</h2><p>添加编译命令到 <code>package.json</code> 文件中</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;
-  &quot;name&quot;: &quot;webpack-upload-assets-plugin&quot;,
-  &quot;version&quot;: &quot;1.0.0&quot;,
-  &quot;description&quot;: &quot;webpack-upload-assets-plugin&quot;,
-  &quot;main&quot;: &quot;index.js&quot;,
-  &quot;scripts&quot;: &#123;
-    &quot;build&quot;: &quot;tsc&quot;
-  &#125;,
-  &quot;repository&quot;: &#123;
-    &quot;type&quot;: &quot;git&quot;,
-    &quot;url&quot;: &quot;git+https:&#x2F;&#x2F;github.com&#x2F;lismill&#x2F;webpack-upload-assets-plugin.git&quot;
-  &#125;,
-  &quot;keywords&quot;: [
-    &quot;webpack&quot;,
-    &quot;upload&quot;,
-    &quot;assets&quot;,
-    &quot;server&quot;,
-    &quot;plugin&quot;
-  ],
-  &quot;author&quot;: &quot;lismill&quot;,
-  &quot;license&quot;: &quot;MIT&quot;,
-  &quot;bugs&quot;: &#123;
-    &quot;url&quot;: &quot;https:&#x2F;&#x2F;github.com&#x2F;lismill&#x2F;webpack-upload-assets-plugin&#x2F;issues&quot;
-  &#125;,
-  &quot;homepage&quot;: &quot;https:&#x2F;&#x2F;github.com&#x2F;lismill&#x2F;webpack-upload-assets-plugin#readme&quot;,
-  &quot;devDependencies&quot;: &#123;
-    &quot;typescript&quot;: &quot;^4.3.5&quot;
-  &#125;
-&#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="6-发布"><a href="#6-发布" class="headerlink" title="6. 发布"></a>6. 发布</h2><pre class="line-numbers language-none"><code class="language-none">npm adduser
-
-npm publish<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="7-添加-CI（持续集成）"><a href="#7-添加-CI（持续集成）" class="headerlink" title="7. 添加 CI（持续集成）"></a>7. 添加 CI（持续集成）</h2><p>1）登录 <a href="https://travis-ci.org/">Travis CI</a></p>
-<p>2）点击 “Sign in with Github”</p>
-<p>3）勾选需要持续集成的项目</p>
-<p>4）添加 travis 的配置文件</p>
-<pre class="line-numbers language-none"><code class="language-none">language : node_js
-node_js :
- - stable
-install:
- - npm install
-script:
- - npm run build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<ol start="5">
-<li> 代码推送到远端，查看构建状态</li>
-</ol>
-<p>6）获取徽章图</p>
-<p>7）将徽章添加到 README 中</p>
-<p>8）提交，推送到 GitHub 仓库</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>NPM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>nvm安装和配置</title>
-    <url>/2021/07/22/nvm%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h2 id="1-下载-amp-安装"><a href="#1-下载-amp-安装" class="headerlink" title="1. 下载&amp;安装"></a>1. 下载&amp;安装</h2><pre class="line-numbers language-none"><code class="language-none">1. 下载地址
-https:&#x2F;&#x2F;github.com&#x2F;coreybutler&#x2F;nvm-windows&#x2F;releases
-
-2. 下载文件
-nvm-setup.zip
-
-3. 解压、安装 - * 记好安装nvm的目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="2-安装指定版本Node-js"><a href="#2-安装指定版本Node-js" class="headerlink" title="2. 安装指定版本Node.js"></a>2. 安装指定版本Node.js</h2><p>由于nvm use之后，某些版本没有带npm，所以便捷安装方式如下：</p>
-<h3 id="2-1-下载指定版本的node-js包"><a href="#2-1-下载指定版本的node-js包" class="headerlink" title="2.1 下载指定版本的node.js包"></a>2.1 下载指定版本的node.js包</h3><pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node&#x2F;
-
-&#x2F;&#x2F; 选择指定版本，如: v10.15.0
-
-&#x2F;&#x2F; 下载指定的包，如: node-v10.15.0-win-x64.zip<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="2-2-解压下载的包"><a href="#2-2-解压下载的包" class="headerlink" title="2.2 解压下载的包"></a>2.2 解压下载的包</h3><h3 id="2-3-修改包的名称"><a href="#2-3-修改包的名称" class="headerlink" title="2.3 修改包的名称"></a>2.3 修改包的名称</h3><p>如 v10.15.0</p>
-<h3 id="2-4-拷贝到nvm安装目录下"><a href="#2-4-拷贝到nvm安装目录下" class="headerlink" title="2.4 拷贝到nvm安装目录下"></a>2.4 拷贝到nvm安装目录下</h3><p><img src="/images/posts/nvm%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE-1.png" alt="img"></p>
-<p><img src="/images/posts/nvm%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE-2.png" alt="img"></p>
-<h2 id="3-卸载指定版本node-js"><a href="#3-卸载指定版本node-js" class="headerlink" title="3. 卸载指定版本node.js"></a>3. 卸载指定版本node.js</h2><p>进入nvm安装目录，删除指定版本的node.js安装目录。如: v10.15.0</p>
-<h2 id="4-使用nvm"><a href="#4-使用nvm" class="headerlink" title="4. 使用nvm"></a>4. 使用nvm</h2><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F; 列出已安装的node.js版本
-nvm list
-
-&#x2F;&#x2F; 使用指定版本的node.js
-nvm use 10.15.0
-
-&#x2F;&#x2F; 查看正在使用的node.js版本
-node -v
-
-&#x2F;&#x2F; 查看正在使用的npm版本
-npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h2 id="5-Enjoy"><a href="#5-Enjoy" class="headerlink" title="5. Enjoy"></a>5. Enjoy</h2><p>😃</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>nvm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue.js-key的作用</title>
-    <url>/2021/07/27/vue.js-key%E7%9A%84%E4%BD%9C%E7%94%A8%E5%92%8C%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 作用 </span>
-在虚拟<span class="token constant">DOM</span>算法中辨识新旧nodes
-
-<span class="token comment">// 类型</span>
-key的值可以是number和string
-
-<span class="token comment">// 使用key</span>
-使用key会基于key的变化重新排列元素顺序<span class="token punctuation">,</span>并且会移除 key 不存在的元素。
-
-<span class="token comment">// 不适用key</span>
-不使用key最小化element的移动
-
-<span class="token comment">// 注意事项</span>
-子元素必须有独特的key，避免重复造成渲染错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>😃</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Vue.js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我是怎么从头开始搭建一个vue.js3.x基础框架的</title>
-    <url>/2021/07/30/vue.js-%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAvue.js3.x%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E7%9A%84/</url>
-    <content><![CDATA[<h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Minima -->
+  <!-- Hexo theme created by @adisaktijrs -->
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+
+  
+  <title>我是怎么从头开始搭建一个vue.js3.x基础框架的</title>
+  
+  <link rel="sitemap" href="https://leeleanlean.github.iositemap.xml" />
+  
+  <link rel="canonical" href="https://leeleanlean.github.io/2021/07/30/vue.js-%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAvue.js3.x%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E7%9A%84/">
+  
+  <meta name="description" content="概览  初始化一个空项目  配置 ESLint 校验  配置多环境信息  配置网页信息  配置 vue.config.js  配置 Element-Puls  配置 SVG  目录结构规范（基础版本，需要多次迭代修改）  CSS 样式系统（基础版本，需要多次迭代修改）  基础框架搭建  Vscode">
+  
+  
+  <meta name="keywords" content="Lean&#39;s blog">
+  
+  <meta name="author" content="LeeLean">
+  
+  <meta property="og:image" content="https://leeleanlean.github.ioundefined">
+  
+  <meta property="og:site_name" content="Lean&#39;s blog" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="我是怎么从头开始搭建一个vue.js3.x基础框架的" />
+  
+  <meta property="og:description" content="概览  初始化一个空项目  配置 ESLint 校验  配置多环境信息  配置网页信息  配置 vue.config.js  配置 Element-Puls  配置 SVG  目录结构规范（基础版本，需要多次迭代修改）  CSS 样式系统（基础版本，需要多次迭代修改）  基础框架搭建  Vscode">
+  
+  <meta property="og:url" content="https://leeleanlean.github.io/2021/07/30/vue.js-%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAvue.js3.x%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E7%9A%84/" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="我是怎么从头开始搭建一个vue.js3.x基础框架的">
+  
+  <meta name="twitter:description" content="概览  初始化一个空项目  配置 ESLint 校验  配置多环境信息  配置网页信息  配置 vue.config.js  配置 Element-Puls  配置 SVG  目录结构规范（基础版本，需要多次迭代修改）  CSS 样式系统（基础版本，需要多次迭代修改）  基础框架搭建  Vscode">
+  
+  
+  <meta name="twitter:image" content="https://leeleanlean.github.ioundefined">
+  
+  <meta name="twitter:url" content="https://leeleanlean.github.io/2021/07/30/vue.js-%E6%88%91%E6%98%AF%E6%80%8E%E4%B9%88%E4%BB%8E%E5%A4%B4%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAvue.js3.x%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E7%9A%84/" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Preload fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="preload" href="../fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+<link rel="stylesheet" href="/css/normalize.css">
+
+  
+<link rel="stylesheet" href="/css/skeleton.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+<link rel="stylesheet" href="/css/prism-dark.css">
+
+  
+<link rel="stylesheet" href="/css/prism-line-numbers.css">
+
+  <!-- User css -->
+  
+  
+<link rel="stylesheet" href="/css/user.css">
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- Custom Theme Color Style
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
+  a:not(.icon) {
+    text-decoration-color: #e74e3d;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 50%,
+      #e74e3d 50%
+    );
+  }
+  blockquote {
+    border-left: 8px solid #e74e3d;
+  }
+  .nanobar .bar {
+    background: #e74e3d;
+  }
+  .button.button-primary:hover,
+  button.button-primary:hover,
+  input[type="submit"].button-primary:hover,
+  input[type="reset"].button-primary:hover,
+  input[type="button"].button-primary:hover,
+  .button.button-primary:focus,
+  button.button-primary:focus,
+  input[type="submit"].button-primary:focus,
+  input[type="reset"].button-primary:focus,
+  input[type="button"].button-primary:focus {
+    background-color: #e74e3d;
+    border-color: #e74e3d;
+  }
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  textarea:focus,
+  select:focus {
+    border: 1px solid #e74e3d;
+  }
+</style>
+
+  <!-- Google Analytics (With Privacy Settings On)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div>
+
+        <div class="row">
+  <div style="display: flex; justify-content: space-between; margin: 20px 0 10px 0">
+    <!-- title -->
+    <h1 class="mt-2">Lean&#39;s Blog</h1>
+    <!-- theme -->
+    <h1 class="mt-2" style="cursor: pointer;">
+      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
+      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
+      <script >
+        if (localStorage.getItem('preferredTheme') == 'dark') {
+          setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+          var darkBtn = document.getElementById('darkBtn')
+          var lightBtn = document.getElementById('lightBtn')
+          if (isDark) {
+            lightBtn.style.display = "block"
+            darkBtn.style.display = "none"
+            localStorage.setItem('preferredTheme', 'dark');
+          } else {
+            lightBtn.style.display = "none"
+            darkBtn.style.display = "block"
+            localStorage.removeItem('preferredTheme');
+          }
+          document.body.classList.toggle("darkmode");
+        }
+      </script>
+    </h1>
+  </div>
+
+  <div class="twelve columns">
+    <div class="row">
+      <div class="nine columns left">
+        <a href="/">Home</a>
+        
+          
+          <a href="/archives" class="ml">Archives</a>
+          
+        
+          
+          <a href="/about" class="ml">About</a>
+          
+        
+          
+          <a target="_blank" rel="noopener" href="https://github.com/leeleanlean" class="ml">Github</a>
+          
+        
+        
+      </div>
+    </div>
+    <hr style="margin-bottom: 2.6rem">
+  </div>
+</div>
+
+        <div class="trans">
+            <h2>我是怎么从头开始搭建一个vue.js3.x基础框架的</h2>
+
+  <h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><ul>
 <li><input checked="" disabled="" type="checkbox"> 初始化一个空项目</li>
 <li><input checked="" disabled="" type="checkbox"> 配置 ESLint 校验</li>
 <li><input checked="" disabled="" type="checkbox"> 配置多环境信息</li>
@@ -1144,7 +381,7 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 
 
 <h2 id="1-配置-vue-config-js"><a href="#1-配置-vue-config-js" class="headerlink" title="1. 配置 vue.config.js"></a>1. 配置 vue.config.js</h2><p><code>./vue.config.js</code></p>
-<p><a href="https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE">更多详细配置</a></p>
+<p><a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE">更多详细配置</a></p>
 <table>
 <thead>
 <tr>
@@ -1198,7 +435,7 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 </tr>
 <tr>
 <td>lintOnSave</td>
-<td>是否在开发环境下通过 <a href="https://github.com/webpack-contrib/eslint-loader">eslint-loader</a> 在每次保存时 lint 代码。这个值会在 <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"><code>@vue/cli-plugin-eslint</code></a> 被安装之后生效。</td>
+<td>是否在开发环境下通过 <a target="_blank" rel="noopener" href="https://github.com/webpack-contrib/eslint-loader">eslint-loader</a> 在每次保存时 lint 代码。这个值会在 <a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"><code>@vue/cli-plugin-eslint</code></a> 被安装之后生效。</td>
 <td>boolean`</td>
 <td><code>&#39;warning&#39;</code></td>
 </tr>
@@ -1222,31 +459,31 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 </tr>
 <tr>
 <td>crossorigin</td>
-<td>设置生成的 HTML 中 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> 和 <code>&lt;script&gt;</code> 标签的 <code>crossorigin</code> 属性。需要注意的是该选项仅影响由 <code>html-webpack-plugin</code> 在构建时注入的标签 - 直接写在模版 (<code>public/index.html</code>) 中的标签不受影响。更多细节可查阅: <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_settings_attributes">CORS settings attributes</a></td>
+<td>设置生成的 HTML 中 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> 和 <code>&lt;script&gt;</code> 标签的 <code>crossorigin</code> 属性。需要注意的是该选项仅影响由 <code>html-webpack-plugin</code> 在构建时注入的标签 - 直接写在模版 (<code>public/index.html</code>) 中的标签不受影响。更多细节可查阅: <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/CORS_settings_attributes">CORS settings attributes</a></td>
 <td>string</td>
 <td>undefined</td>
 </tr>
 <tr>
 <td>integrity</td>
-<td>在生成的 HTML 中的 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> 和 <code>&lt;script&gt;</code> 标签上启用 <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> (SRI)。如果你构建后的文件是部署在 CDN 上的，启用该选项可以提供额外的安全性。<br />需要注意的是该选项仅影响由 <code>html-webpack-plugin</code> 在构建时注入的标签 - 直接写在模版 (<code>public/index.html</code>) 中的标签不受影响。</td>
+<td>在生成的 HTML 中的 <code>&lt;link rel=&quot;stylesheet&quot;&gt;</code> 和 <code>&lt;script&gt;</code> 标签上启用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Subresource Integrity</a> (SRI)。如果你构建后的文件是部署在 CDN 上的，启用该选项可以提供额外的安全性。<br />需要注意的是该选项仅影响由 <code>html-webpack-plugin</code> 在构建时注入的标签 - 直接写在模版 (<code>public/index.html</code>) 中的标签不受影响。</td>
 <td>boolean</td>
 <td>false</td>
 </tr>
 <tr>
 <td>configureWebpack</td>
-<td>如果这个值是一个对象，则会通过 <a href="https://github.com/survivejs/webpack-merge">webpack-merge</a> 合并到最终的配置中。如果这个值是一个函数，则会接收被解析的配置作为参数。该函数既可以修改配置并不返回任何东西，也可以返回一个被克隆或合并过的配置版本。<br />更多细节可查阅：<a href="https://cli.vuejs.org/zh/guide/webpack.html#%E7%AE%80%E5%8D%95%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F">配合 webpack &gt; 简单的配置方式</a></td>
+<td>如果这个值是一个对象，则会通过 <a target="_blank" rel="noopener" href="https://github.com/survivejs/webpack-merge">webpack-merge</a> 合并到最终的配置中。如果这个值是一个函数，则会接收被解析的配置作为参数。该函数既可以修改配置并不返回任何东西，也可以返回一个被克隆或合并过的配置版本。<br />更多细节可查阅：<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/webpack.html#%E7%AE%80%E5%8D%95%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F">配合 webpack &gt; 简单的配置方式</a></td>
 <td>Object |Function</td>
 <td>-</td>
 </tr>
 <tr>
 <td>chainWebpack</td>
-<td>是一个函数，会接收一个基于 <a href="https://github.com/mozilla-neutrino/webpack-chain">webpack-chain</a> 的 <code>ChainableConfig</code> 实例。允许对内部的 webpack 配置进行更细粒度的修改。<br />更多细节可查阅：<a href="https://cli.vuejs.org/zh/guide/webpack.html#%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C-%E9%AB%98%E7%BA%A7">配合 webpack &gt; 链式操作</a></td>
+<td>是一个函数，会接收一个基于 <a target="_blank" rel="noopener" href="https://github.com/mozilla-neutrino/webpack-chain">webpack-chain</a> 的 <code>ChainableConfig</code> 实例。允许对内部的 webpack 配置进行更细粒度的修改。<br />更多细节可查阅：<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/webpack.html#%E9%93%BE%E5%BC%8F%E6%93%8D%E4%BD%9C-%E9%AB%98%E7%BA%A7">配合 webpack &gt; 链式操作</a></td>
 <td>Function</td>
 <td>-</td>
 </tr>
 <tr>
 <td>css.modules</td>
-<td>从 v4 起已弃用，请使用<a href="https://cli.vuejs.org/zh/config/#css-requireModuleExtension"><code>css.requireModuleExtension</code></a>。 在 v3 中，这个选项含义与 <code>css.requireModuleExtension</code> 相反。</td>
+<td>从 v4 起已弃用，请使用<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/config/#css-requireModuleExtension"><code>css.requireModuleExtension</code></a>。 在 v3 中，这个选项含义与 <code>css.requireModuleExtension</code> 相反。</td>
 <td>-</td>
 <td>-</td>
 </tr>
@@ -1276,7 +513,7 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 </tr>
 <tr>
 <td>devServer</td>
-<td><a href="https://webpack.js.org/configuration/dev-server/">所有 <code>webpack-dev-server</code> 的选项</a>都支持。</td>
+<td><a target="_blank" rel="noopener" href="https://webpack.js.org/configuration/dev-server/">所有 <code>webpack-dev-server</code> 的选项</a>都支持。</td>
 <td>Object</td>
 <td>-</td>
 </tr>
@@ -1294,7 +531,7 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 </tr>
 <tr>
 <td>pwa</td>
-<td>向 <a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa">PWA 插件</a>传递选项。</td>
+<td>向 <a target="_blank" rel="noopener" href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa">PWA 插件</a>传递选项。</td>
 <td>Object</td>
 <td>-</td>
 </tr>
@@ -1313,7 +550,7 @@ $ <span class="token function">npm</span> run serve<span aria-hidden="true" clas
 
 <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ElementPlus<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="1-3-使用方法-1"><a href="#1-3-使用方法-1" class="headerlink" title="1.3 使用方法"></a>1.3 使用方法</h3><p><a href="https://element-plus.org/#/zh-CN">Element Plus+</a></p>
+<h3 id="1-3-使用方法-1"><a href="#1-3-使用方法-1" class="headerlink" title="1.3 使用方法"></a>1.3 使用方法</h3><p><a target="_blank" rel="noopener" href="https://element-plus.org/#/zh-CN">Element Plus+</a></p>
 <h2 id="1-SVG-配置"><a href="#1-SVG-配置" class="headerlink" title="1. SVG 配置"></a>1. SVG 配置</h2><h3 id="1-1-安装依赖"><a href="#1-1-安装依赖" class="headerlink" title="1.1 安装依赖"></a>1.1 安装依赖</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> svg-sprite-loader --save-dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
@@ -2060,13 +1297,70 @@ config<span class="token punctuation">.</span>resolve<span class="token punctuat
 
 <h3 id="Lints-and-fixes-files"><a href="#Lints-and-fixes-files" class="headerlink" title="Lints and fixes files"></a>Lints and fixes files</h3><pre class="line-numbers language-none"><code class="language-none">npm run lint<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="Customize-configuration"><a href="#Customize-configuration" class="headerlink" title="Customize configuration"></a>Customize configuration</h3><p>See <a href="https://cli.vuejs.org/config/">Configuration Reference</a>.</p>
-]]></content>
-      <categories>
-        <category>笔记</category>
-      </categories>
-      <tags>
-        <tag>Vue.js</tag>
-      </tags>
-  </entry>
-</search>
+<h3 id="Customize-configuration"><a href="#Customize-configuration" class="headerlink" title="Customize configuration"></a>Customize configuration</h3><p>See <a target="_blank" rel="noopener" href="https://cli.vuejs.org/config/">Configuration Reference</a>.</p>
+
+  <p style="margin: 3rem 0;"><a class="classtest-link" href="/tags/Vue-js/" rel="tag">Vue.js</a> — 2021年7月30日</p>
+  
+
+
+          <div class="row mt-2">
+  
+    <div class="eight columns" style="display: flex; align-items: center;">
+      
+      <a href="https://github.com/leeleanlean" target="_blank" style="text-decoration: none; margin-right: 8px; display: flex; align-items: center;" rel="noreferrer" aria-label="GitHub">
+        <svg class="github svg-hov" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      
+      LEAN'S BLOG © 2020
+    </div>
+    <!-- <div class="eight columns">
+      <p id="madewith">Made with ❤ and
+        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
+        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
+        </a>
+        
+        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
+        
+    </div> -->
+
+    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
+    <!-- <div class="four columns mb-3 posisi" >
+      
+      <a class="ml-0 footer-link icon" href="https://github.com/leeleanlean" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
+        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      
+
+      
+
+      
+
+      
+
+      
+
+    </div> -->
+  
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="/js/nanobar.min.js"></script>
+  <script>
+    var options = {
+      classname: 'nanobar',
+      id: 'myNanobar'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+  </script>
+
+</body>
+
+</html>
